@@ -76,3 +76,6 @@ Vite
 - Production에서는 rollup 사용
   - 다양한 인프라나 플러그인에 대응이 되지 않으므로
 - Development의 사전 번들링에서는 esbuild 사용
+
+### FileSystem 기반 설치
+npm i file:../../packages/themes
