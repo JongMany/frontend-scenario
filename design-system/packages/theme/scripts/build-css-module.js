@@ -9,27 +9,29 @@ const toCssCasting = (str) => {
 };
 const generateThemeCssVariables = () => {
   const cssString = [];
+
   Object.entries(theme.vars).forEach(([key, value]) => {
     if (key === "colors") {
       Object.entries(value.$static).forEach(([colorKey, colorValue]) => {
         if (colorKey === "light") {
           const selector = ":root";
+
           const cssVariables = Object.entries(colorValue)
-            .map(([mainKey, mainValue]) => {
-              return Object.entries(mainValue)
+            .map(([mainKey, mainValue]) =>
+              Object.entries(mainValue)
                 .map(
                   ([subKey, subValue]) =>
-                    `--${colorKey}-${toCssCasting(mainKey)}-${toCssCasting(
+                    `--${toCssCasting(mainKey)}-${toCssCasting(
                       subKey
-                    )}: ${subValue}`
+                    )}: ${subValue};`
                 )
-                .join("\n");
-            })
+                .join("\n")
+            )
             .join("\n");
+
           cssString.push(`${selector} {\n${cssVariables}\n}`);
         }
       });
-      return;
     }
   });
   return cssString;
