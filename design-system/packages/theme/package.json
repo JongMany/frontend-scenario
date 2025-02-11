@@ -2,9 +2,12 @@
   "name": "@jm/themes",
   "version": "0.0.1",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "build:cjs": "esbuild src/index.js --format=cjs --minify --bundle --outfile=dist/index.js",
-    "build:esm": "esbuild src/index.js --format=esm --minify --bundle --outfile=dist/index.js"
+    "build:esm": "esbuild src/index.js --format=esm --minify --bundle --outfile=dist/index.js",
+    "build:js": "node esbuild.js",
+    "build": "npm run build:js"
   },
   "devDependencies": {
     "esbuild": "^0.16.17"
