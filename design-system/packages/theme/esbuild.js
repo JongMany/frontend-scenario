@@ -1,22 +1,42 @@
 import esbuild from "esbuild";
+import pkg from "./package.json" with { type: "json" };
+// import pkg from "./package.json" assert { type: "json" };
 
-esbuild.build({
-  entryPoints: ["src/index.js"],
-  bundle: true,
-  minify: true,
-  sourcemap: true,
-  outdir: "dist",
-  format: "esm",
+const dev = process.argv.includes("--dev");
+const minify = !dev;
+
+const external = Object.keys({
+  ...pkg.peerDependencies,
+  ...pkg.dependencies,
 });
 
-esbuild.build({
+const watch = process.argv.includes("--watch");
+
+const baseConfig = {
   entryPoints: ["src/index.js"],
   bundle: true,
-  minify: true,
+  minify, // 개발 편의성을 위해
   sourcemap: true,
   outdir: "dist",
-  format: "cjs",
-  outExtension: {
-    ".js": ".cjs",
-  },
+  target: "es2019",
+  watch,
+  external,
+};
+
+Promise.all([
+  esbuild.build({
+    ...baseConfig,
+    format: "esm",
+  }),
+
+  esbuild.build({
+    ...baseConfig,
+    format: "cjs",
+    outExtension: {
+      ".js": ".cjs",
+    },
+  }),
+]).catch(() => {
+  console.error(...data, "Build failed");
+  process.exit(1);
 });
