@@ -15,8 +15,9 @@
     "build:esm": "esbuild src/index.js --format=esm --minify --bundle --outfile=dist/index.js",
     "build:js": "node esbuild.js",
     "build:ts": "tsc --emitDeclarationOnly",
+    "build:css": "node ./scripts/build-css-module.js",
     "clean": "rm -rf dist",
-    "build": "npm run clean && npm run build:js && npm run build:ts"
+    "build": "npm run clean && npm run build:js && npm run build:ts && npm run build:css"
   },
   "devDependencies": {
     "esbuild": "^0.16.17",
