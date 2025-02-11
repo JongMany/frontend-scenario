@@ -13,7 +13,7 @@ const external = Object.keys({
 const watch = process.argv.includes("--watch");
 
 const baseConfig = {
-  entryPoints: ["src/index.js"],
+  entryPoints: ["src/index.ts"],
   bundle: true,
   minify, // 개발 편의성을 위해
   sourcemap: true,
