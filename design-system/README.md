@@ -45,3 +45,34 @@
 6. 문서화: 디자인 시스템의 모든 요소를 사용하는 방법 (파라미터, 시각화, 코드 스니펫)
 7. 가이드라인: 좋은 사용성, 접근성 등의 가이드와 권장사항들
 8. 프로세스 및 워크플로우: 디자인 시스템 업데이트, 확장하는 것에 대한 프로세스
+
+예시
+
+- https://spectrum.adobe.com/
+- https://react-spectrum.adobe.com/react-aria/index.html
+- https://www.radix-ui.com/
+
+### 디자인 토큰 동작 원리 (CSS Variable)
+
+CSS Variable: CSS에서 사용하는 변수.  
+지역 변수와 전역 변수 형태.  
+var()를 통해서 자유롭게 적용할 수 있음.
+
+### 라이브러리 제작 시 고려사항
+
+- cjs, mjs, ts 모두 고려되어야 함 => 3번 이상 빌드를 진행해야 함
+- 라이브러리의 모듈 번들러는 속도, 최적화(번들 사이즈, 트리쉐이킹) 등에 더 포커스가 되어있다.
+- rollup, snowpack, snowpack 등을 사용함
+
+ESBuild
+
+- 매우 빠른 빌드 속도
+- Go 언어 사용
+- 코드 파싱, 출력, 소스맵 생성을 모두 병렬로 처리
+- 불필요한 데이터 변환과 할당이 없음
+
+Vite
+
+- Production에서는 rollup 사용
+  - 다양한 인프라나 플러그인에 대응이 되지 않으므로
+- Development의 사전 번들링에서는 esbuild 사용
