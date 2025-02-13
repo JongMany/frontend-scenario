@@ -5,9 +5,11 @@
     "lib": ["ESNext", "DOM"],
     "declaration": true, // ✅ 타입 선언 파일 생성
     "declarationMap": true, // ✅ 타입 선언 파일과 원본 연결
-    "declarationDir": "dist", // 👈 타입 파일을 `dist/`에 저장
+    // "declarationDir": "dist", // 👈 얘가 문제였음
     "strict": true,
     "moduleResolution": "node",
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "skipLibCheck": true
+    
   }
 }

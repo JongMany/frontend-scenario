@@ -1,5 +1,130 @@
 {
   "nodes": {
+    "@jm/react-components-layout": {
+      "name": "@jm/react-components-layout",
+      "type": "lib",
+      "data": {
+        "root": "packages/react/components/layout",
+        "sourceRoot": "packages/react/components/layout",
+        "name": "@jm/react-components-layout",
+        "projectType": "library",
+        "tags": [
+          "npm:public"
+        ],
+        "metadata": {
+          "targetGroups": {
+            "NPM Scripts": [
+              "build:cjs",
+              "build:esm",
+              "build:js",
+              "build:ts",
+              "clean",
+              "build"
+            ]
+          },
+          "js": {
+            "packageName": "@jm/react-components-layout",
+            "packageExports": {
+              ".": {
+                "types": "./dist/index.d.ts",
+                "import": "./dist/index.js",
+                "require": "./dist/index.cjs"
+              },
+              "./style.css": "./dist/index.css"
+            },
+            "packageMain": "dist/index.js",
+            "isInPackageManagerWorkspaces": true
+          }
+        },
+        "targets": {
+          "build:cjs": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:cjs"
+            },
+            "metadata": {
+              "scriptContent": "esbuild src/index.js --format=cjs --minify --bundle --outfile=dist/index.js",
+              "runCommand": "yarn build:cjs"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "build:esm": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:esm"
+            },
+            "metadata": {
+              "scriptContent": "esbuild src/index.js --format=esm --minify --bundle --outfile=dist/index.js",
+              "runCommand": "yarn build:esm"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "build:js": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:js"
+            },
+            "metadata": {
+              "scriptContent": "node esbuild.js",
+              "runCommand": "yarn build:js"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "build:ts": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:ts"
+            },
+            "metadata": {
+              "scriptContent": "tsc --emitDeclarationOnly",
+              "runCommand": "yarn build:ts"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "clean": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "clean"
+            },
+            "metadata": {
+              "scriptContent": "rm -rf dist",
+              "runCommand": "yarn clean"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "build": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build"
+            },
+            "metadata": {
+              "scriptContent": "yarn clean && yarn build:js && yarn build:ts",
+              "runCommand": "yarn build"
+            },
+            "configurations": {},
+            "parallelism": true,
+            "dependsOn": [
+              "^build"
+            ]
+          },
+          "nx-release-publish": {
+            "executor": "@nx/js:release-publish",
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "options": {},
+            "configurations": {},
+            "parallelism": true
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
     "@jm/esbuild-config": {
       "name": "@jm/esbuild-config",
       "type": "lib",
@@ -425,6 +550,15 @@
         "hash": "10c0/da04f26bae732a5b6790775a736b58c7876c28e62203c5097f043fd7273ef6debe5bfd7a4e670a6819f4549b215c7b9762c6358e44797b3c4d733defc8290781"
       }
     },
+    "npm:@babel/plugin-syntax-typescript@7.25.9": {
+      "type": "npm",
+      "name": "npm:@babel/plugin-syntax-typescript@7.25.9",
+      "data": {
+        "version": "7.25.9",
+        "packageName": "@babel/plugin-syntax-typescript",
+        "hash": "10c0/5192ebe11bd46aea68b7a60fd9555465c59af7e279e71126788e59121b86e00b505816685ab4782abe159232b0f73854e804b54449820b0d950b397ee158caa2"
+      }
+    },
     "npm:@babel/plugin-transform-react-jsx-self@7.25.9": {
       "type": "npm",
       "name": "npm:@babel/plugin-transform-react-jsx-self@7.25.9",
@@ -632,6 +766,15 @@
         "hash": "11363484576368630950"
       }
     },
+    "npm:@esbuild/aix-ppc64@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/aix-ppc64@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/aix-ppc64",
+        "hash": "12058974461649143789"
+      }
+    },
     "npm:@esbuild/android-arm64@0.16.17": {
       "type": "npm",
       "name": "npm:@esbuild/android-arm64@0.16.17",
@@ -648,6 +791,15 @@
         "version": "0.24.2",
         "packageName": "@esbuild/android-arm64",
         "hash": "16242997402641685722"
+      }
+    },
+    "npm:@esbuild/android-arm64@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/android-arm64@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/android-arm64",
+        "hash": "18293186594086192566"
       }
     },
     "npm:@esbuild/android-arm@0.16.17": {
@@ -668,6 +820,15 @@
         "hash": "14405475141618937207"
       }
     },
+    "npm:@esbuild/android-arm@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/android-arm@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/android-arm",
+        "hash": "7744673463259893648"
+      }
+    },
     "npm:@esbuild/android-x64@0.16.17": {
       "type": "npm",
       "name": "npm:@esbuild/android-x64@0.16.17",
@@ -684,6 +845,15 @@
         "version": "0.24.2",
         "packageName": "@esbuild/android-x64",
         "hash": "13830355854173813045"
+      }
+    },
+    "npm:@esbuild/android-x64@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/android-x64@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/android-x64",
+        "hash": "12337520953564471827"
       }
     },
     "npm:@esbuild/darwin-arm64@0.16.17": {
@@ -704,6 +874,15 @@
         "hash": "13489040783445054214"
       }
     },
+    "npm:@esbuild/darwin-arm64@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/darwin-arm64@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/darwin-arm64",
+        "hash": "12970237706260951098"
+      }
+    },
     "npm:@esbuild/darwin-x64@0.16.17": {
       "type": "npm",
       "name": "npm:@esbuild/darwin-x64@0.16.17",
@@ -720,6 +899,15 @@
         "version": "0.24.2",
         "packageName": "@esbuild/darwin-x64",
         "hash": "4956686551964100352"
+      }
+    },
+    "npm:@esbuild/darwin-x64@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/darwin-x64@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/darwin-x64",
+        "hash": "11465721432127390454"
       }
     },
     "npm:@esbuild/freebsd-arm64@0.16.17": {
@@ -740,6 +928,15 @@
         "hash": "13707504779179311301"
       }
     },
+    "npm:@esbuild/freebsd-arm64@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/freebsd-arm64@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/freebsd-arm64",
+        "hash": "13168962759451749628"
+      }
+    },
     "npm:@esbuild/freebsd-x64@0.16.17": {
       "type": "npm",
       "name": "npm:@esbuild/freebsd-x64@0.16.17",
@@ -756,6 +953,15 @@
         "version": "0.24.2",
         "packageName": "@esbuild/freebsd-x64",
         "hash": "11152293271038158728"
+      }
+    },
+    "npm:@esbuild/freebsd-x64@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/freebsd-x64@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/freebsd-x64",
+        "hash": "12660815025204244998"
       }
     },
     "npm:@esbuild/linux-arm64@0.16.17": {
@@ -776,6 +982,15 @@
         "hash": "2163506372957116530"
       }
     },
+    "npm:@esbuild/linux-arm64@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-arm64@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/linux-arm64",
+        "hash": "7433804914320981790"
+      }
+    },
     "npm:@esbuild/linux-arm@0.16.17": {
       "type": "npm",
       "name": "npm:@esbuild/linux-arm@0.16.17",
@@ -792,6 +1007,15 @@
         "version": "0.24.2",
         "packageName": "@esbuild/linux-arm",
         "hash": "9593039707074773157"
+      }
+    },
+    "npm:@esbuild/linux-arm@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-arm@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/linux-arm",
+        "hash": "17141644717078099914"
       }
     },
     "npm:@esbuild/linux-ia32@0.16.17": {
@@ -812,6 +1036,15 @@
         "hash": "5434220698906701174"
       }
     },
+    "npm:@esbuild/linux-ia32@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-ia32@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/linux-ia32",
+        "hash": "13351565335618384429"
+      }
+    },
     "npm:@esbuild/linux-loong64@0.16.17": {
       "type": "npm",
       "name": "npm:@esbuild/linux-loong64@0.16.17",
@@ -828,6 +1061,15 @@
         "version": "0.24.2",
         "packageName": "@esbuild/linux-loong64",
         "hash": "4259752836397942031"
+      }
+    },
+    "npm:@esbuild/linux-loong64@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-loong64@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/linux-loong64",
+        "hash": "6599356112699176939"
       }
     },
     "npm:@esbuild/linux-mips64el@0.16.17": {
@@ -848,6 +1090,15 @@
         "hash": "10472373051662428862"
       }
     },
+    "npm:@esbuild/linux-mips64el@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-mips64el@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/linux-mips64el",
+        "hash": "15661813181323865450"
+      }
+    },
     "npm:@esbuild/linux-ppc64@0.16.17": {
       "type": "npm",
       "name": "npm:@esbuild/linux-ppc64@0.16.17",
@@ -864,6 +1115,15 @@
         "version": "0.24.2",
         "packageName": "@esbuild/linux-ppc64",
         "hash": "617729500885069583"
+      }
+    },
+    "npm:@esbuild/linux-ppc64@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-ppc64@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/linux-ppc64",
+        "hash": "7534811694148506700"
       }
     },
     "npm:@esbuild/linux-riscv64@0.16.17": {
@@ -884,6 +1144,15 @@
         "hash": "17261247830627664022"
       }
     },
+    "npm:@esbuild/linux-riscv64@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-riscv64@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/linux-riscv64",
+        "hash": "15891692315830126053"
+      }
+    },
     "npm:@esbuild/linux-s390x@0.16.17": {
       "type": "npm",
       "name": "npm:@esbuild/linux-s390x@0.16.17",
@@ -900,6 +1169,15 @@
         "version": "0.24.2",
         "packageName": "@esbuild/linux-s390x",
         "hash": "15480091524621717228"
+      }
+    },
+    "npm:@esbuild/linux-s390x@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-s390x@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/linux-s390x",
+        "hash": "8705409405689271836"
       }
     },
     "npm:@esbuild/linux-x64@0.16.17": {
@@ -920,6 +1198,15 @@
         "hash": "12785400264059994504"
       }
     },
+    "npm:@esbuild/linux-x64@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/linux-x64@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/linux-x64",
+        "hash": "6023707012817691674"
+      }
+    },
     "npm:@esbuild/netbsd-arm64@0.24.2": {
       "type": "npm",
       "name": "npm:@esbuild/netbsd-arm64@0.24.2",
@@ -927,6 +1214,15 @@
         "version": "0.24.2",
         "packageName": "@esbuild/netbsd-arm64",
         "hash": "15401340337712840495"
+      }
+    },
+    "npm:@esbuild/netbsd-arm64@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/netbsd-arm64@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/netbsd-arm64",
+        "hash": "15021077693784572168"
       }
     },
     "npm:@esbuild/netbsd-x64@0.16.17": {
@@ -947,6 +1243,15 @@
         "hash": "9084665988127064179"
       }
     },
+    "npm:@esbuild/netbsd-x64@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/netbsd-x64@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/netbsd-x64",
+        "hash": "1374604741188579843"
+      }
+    },
     "npm:@esbuild/openbsd-arm64@0.24.2": {
       "type": "npm",
       "name": "npm:@esbuild/openbsd-arm64@0.24.2",
@@ -954,6 +1259,15 @@
         "version": "0.24.2",
         "packageName": "@esbuild/openbsd-arm64",
         "hash": "15545703863092365893"
+      }
+    },
+    "npm:@esbuild/openbsd-arm64@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/openbsd-arm64@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/openbsd-arm64",
+        "hash": "10148153201807430001"
       }
     },
     "npm:@esbuild/openbsd-x64@0.16.17": {
@@ -974,6 +1288,15 @@
         "hash": "2972393903573341650"
       }
     },
+    "npm:@esbuild/openbsd-x64@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/openbsd-x64@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/openbsd-x64",
+        "hash": "15588300352477113349"
+      }
+    },
     "npm:@esbuild/sunos-x64@0.16.17": {
       "type": "npm",
       "name": "npm:@esbuild/sunos-x64@0.16.17",
@@ -990,6 +1313,15 @@
         "version": "0.24.2",
         "packageName": "@esbuild/sunos-x64",
         "hash": "10762994084647646667"
+      }
+    },
+    "npm:@esbuild/sunos-x64@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/sunos-x64@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/sunos-x64",
+        "hash": "14191090098816077046"
       }
     },
     "npm:@esbuild/win32-arm64@0.16.17": {
@@ -1010,6 +1342,15 @@
         "hash": "10056804707127588140"
       }
     },
+    "npm:@esbuild/win32-arm64@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/win32-arm64@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/win32-arm64",
+        "hash": "16813468937816088045"
+      }
+    },
     "npm:@esbuild/win32-ia32@0.16.17": {
       "type": "npm",
       "name": "npm:@esbuild/win32-ia32@0.16.17",
@@ -1028,6 +1369,15 @@
         "hash": "6565015344409998779"
       }
     },
+    "npm:@esbuild/win32-ia32@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/win32-ia32@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/win32-ia32",
+        "hash": "2654939149556578295"
+      }
+    },
     "npm:@esbuild/win32-x64@0.16.17": {
       "type": "npm",
       "name": "npm:@esbuild/win32-x64@0.16.17",
@@ -1044,6 +1394,15 @@
         "version": "0.24.2",
         "packageName": "@esbuild/win32-x64",
         "hash": "9828594254307430953"
+      }
+    },
+    "npm:@esbuild/win32-x64@0.25.0": {
+      "type": "npm",
+      "name": "npm:@esbuild/win32-x64@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "@esbuild/win32-x64",
+        "hash": "15719688071731120330"
       }
     },
     "npm:@eslint-community/eslint-utils@4.4.1": {
@@ -1973,6 +2332,51 @@
         "hash": "10c0/0fc3097c2540ada1fc340ee56d58d96b5b536a2a0dab6e3ec17d4bfc8c4c86db345f61a375a8185f9da96f01c69678f836a2b57eeaa9e4b8eeafd26428e57b0a"
       }
     },
+    "npm:@vanilla-extract/babel-plugin-debug-ids@1.2.0": {
+      "type": "npm",
+      "name": "npm:@vanilla-extract/babel-plugin-debug-ids@1.2.0",
+      "data": {
+        "version": "1.2.0",
+        "packageName": "@vanilla-extract/babel-plugin-debug-ids",
+        "hash": "10c0/8deacf21394fa400c70f0b5b2c9891b64265036aae2e579ee24e237b92f2350615a98c211a701972ef7287e0de42fcb6ac166d75036663cf660cf4f7a0e2e55e"
+      }
+    },
+    "npm:@vanilla-extract/css@1.17.1": {
+      "type": "npm",
+      "name": "npm:@vanilla-extract/css@1.17.1",
+      "data": {
+        "version": "1.17.1",
+        "packageName": "@vanilla-extract/css",
+        "hash": "10c0/96b646ea2fc2e1ac7809305d51995f38abaa6a3e6c55b4d228d498f01e33f4a23254e3e4620094c335234bfe178c79a0bfcbdf0dd1faab41aaae237a8e439925"
+      }
+    },
+    "npm:@vanilla-extract/esbuild-plugin@2.3.15": {
+      "type": "npm",
+      "name": "npm:@vanilla-extract/esbuild-plugin@2.3.15",
+      "data": {
+        "version": "2.3.15",
+        "packageName": "@vanilla-extract/esbuild-plugin",
+        "hash": "10c0/c0caf3cd8b2c7d45abaf3b3f9683f0089f0671ed2e76b2ae11f8f1c308d8aae8e1ac26c804a50a787e01dc29ce30446ef8b1a6830a0cf745146edf8f93d8160b"
+      }
+    },
+    "npm:@vanilla-extract/integration@8.0.1": {
+      "type": "npm",
+      "name": "npm:@vanilla-extract/integration@8.0.1",
+      "data": {
+        "version": "8.0.1",
+        "packageName": "@vanilla-extract/integration",
+        "hash": "10c0/ba075c5a330bf6634f55ed687073bdb16b86dfac44ddc9af0e35b6f8613b1cf6434dcc4717b110078beffe85b44e59c06cb35265d1f1c3032c1e441c0677d8c5"
+      }
+    },
+    "npm:@vanilla-extract/private@1.0.6": {
+      "type": "npm",
+      "name": "npm:@vanilla-extract/private@1.0.6",
+      "data": {
+        "version": "1.0.6",
+        "packageName": "@vanilla-extract/private",
+        "hash": "10c0/f1c4d9f32f509f664b2d073ea114ff0a83f154bd3cdae429cade64ad1ca0fdc1ba745f2811496cc6a6f8e5513a9a0fa3798ffc41e6ff8868aa7f06c825f615ef"
+      }
+    },
     "npm:@vitejs/plugin-react@4.3.4": {
       "type": "npm",
       "name": "npm:@vitejs/plugin-react@4.3.4",
@@ -2522,6 +2926,15 @@
         "hash": "10c0/c996b1cfdf95b6c90fee4dae37e332c8b6eb7d106430c17d538034c0ad9a1630cb194d2ab37293b1bdd4d779494beee7786d586a50bd9376fd6f7bcc2bd4c98f"
       }
     },
+    "npm:confbox@0.1.8": {
+      "type": "npm",
+      "name": "npm:confbox@0.1.8",
+      "data": {
+        "version": "0.1.8",
+        "packageName": "confbox",
+        "hash": "10c0/fc2c68d97cb54d885b10b63e45bd8da83a8a71459d3ecf1825143dd4c7f9f1b696b3283e07d9d12a144c1301c2ebc7842380bdf0014e55acc4ae1c9550102418"
+      }
+    },
     "npm:convert-source-map@1.9.0": {
       "type": "npm",
       "name": "npm:convert-source-map@1.9.0",
@@ -2556,6 +2969,24 @@
         "version": "7.0.6",
         "packageName": "cross-spawn",
         "hash": "10c0/053ea8b2135caff68a9e81470e845613e374e7309a47731e81639de3eaeb90c3d01af0e0b44d2ab9d50b43467223b88567dfeb3262db942dc063b9976718ffc1"
+      }
+    },
+    "npm:css-what@6.1.0": {
+      "type": "npm",
+      "name": "npm:css-what@6.1.0",
+      "data": {
+        "version": "6.1.0",
+        "packageName": "css-what",
+        "hash": "10c0/a09f5a6b14ba8dcf57ae9a59474722e80f20406c53a61e9aedb0eedc693b135113ffe2983f4efc4b5065ae639442e9ae88df24941ef159c218b231011d733746"
+      }
+    },
+    "npm:cssesc@3.0.0": {
+      "type": "npm",
+      "name": "npm:cssesc@3.0.0",
+      "data": {
+        "version": "3.0.0",
+        "packageName": "cssesc",
+        "hash": "10c0/6bcfd898662671be15ae7827120472c5667afb3d7429f1f917737f3bf84c4176003228131b643ae74543f17a394446247df090c597bb9a728cce298606ed0aa7"
       }
     },
     "npm:csstype@3.1.3": {
@@ -2621,6 +3052,15 @@
         "hash": "10c0/37d96ae42cbc71c14844d2ae3ba55adf462ec89fd3a999459dec3833944cd999af6007ff29c780f1c61153bcaaf2c842d1e4ce1ec621e4fc4923244942e4a02a"
       }
     },
+    "npm:dedent@1.5.3": {
+      "type": "npm",
+      "name": "npm:dedent@1.5.3",
+      "data": {
+        "version": "1.5.3",
+        "packageName": "dedent",
+        "hash": "10c0/d94bde6e6f780be4da4fd760288fcf755ec368872f4ac5218197200d86430aeb8d90a003a840bff1c20221188e3f23adced0119cb811c6873c70d0ac66d12832"
+      }
+    },
     "npm:deep-is@0.1.4": {
       "type": "npm",
       "name": "npm:deep-is@0.1.4",
@@ -2628,6 +3068,24 @@
         "version": "0.1.4",
         "packageName": "deep-is",
         "hash": "10c0/7f0ee496e0dff14a573dc6127f14c95061b448b87b995fc96c017ce0a1e66af1675e73f1d6064407975bc4ea6ab679497a29fff7b5b9c4e99cb10797c1ad0b4c"
+      }
+    },
+    "npm:deep-object-diff@1.1.9": {
+      "type": "npm",
+      "name": "npm:deep-object-diff@1.1.9",
+      "data": {
+        "version": "1.1.9",
+        "packageName": "deep-object-diff",
+        "hash": "10c0/12cfd1b000d16c9192fc649923c972f8aac2ddca4f71a292f8f2c1e2d5cf3c9c16c85e73ab3e7d8a89a5ec6918d6460677d0b05bd160f7bd50bb4816d496dc24"
+      }
+    },
+    "npm:deepmerge@4.3.1": {
+      "type": "npm",
+      "name": "npm:deepmerge@4.3.1",
+      "data": {
+        "version": "4.3.1",
+        "packageName": "deepmerge",
+        "hash": "10c0/e53481aaf1aa2c4082b5342be6b6d8ad9dfe387bc92ce197a66dea08bd4265904a087e75e464f14d1347cf2ac8afe1e4c16b266e0561cc5df29382d3c5f80044"
       }
     },
     "npm:defaults@1.0.4": {
@@ -2945,6 +3403,15 @@
         "hash": "10c0/5a25bb08b6ba23db6e66851828d848bd3ff87c005a48c02d83e38879058929878a6baa5a414e1141faee0d1dece3f32b5fbc2a87b82ed6a7aa857cf40359aeb5"
       }
     },
+    "npm:esbuild@0.25.0": {
+      "type": "npm",
+      "name": "npm:esbuild@0.25.0",
+      "data": {
+        "version": "0.25.0",
+        "packageName": "esbuild",
+        "hash": "10c0/5767b72da46da3cfec51661647ec850ddbf8a8d0662771139f10ef0692a8831396a0004b2be7966cecdb08264fb16bdc16290dcecd92396fac5f12d722fa013d"
+      }
+    },
     "npm:escalade@3.2.0": {
       "type": "npm",
       "name": "npm:escalade@3.2.0",
@@ -3213,6 +3680,15 @@
         "version": "2.0.3",
         "packageName": "esutils",
         "hash": "10c0/9a2fe69a41bfdade834ba7c42de4723c97ec776e40656919c62cbd13607c45e127a003f05f724a1ea55e5029a4cf2de444b13009f2af71271e42d93a637137c7"
+      }
+    },
+    "npm:eval@0.1.8": {
+      "type": "npm",
+      "name": "npm:eval@0.1.8",
+      "data": {
+        "version": "0.1.8",
+        "packageName": "eval",
+        "hash": "10c0/258e700bff09e3ce3344273d5b6691b8ec5b043538d84f738f14d8b0aded33d64c00c15b380de725b1401b15f428ab35a9e7ca19a7d25f162c4f877c71586be9"
       }
     },
     "npm:exponential-backoff@3.1.2": {
@@ -4178,6 +4654,15 @@
         "hash": "10c0/6acc10d139eaefdbe04d2f679e6191b3abf073f111edf10b1de5302c97ec93fffeb2fdd8681ed17f16268aa9dd4f8c588ed9d1d3bffbbfa6e8bf897cbb3149b9"
       }
     },
+    "npm:javascript-stringify@2.1.0": {
+      "type": "npm",
+      "name": "npm:javascript-stringify@2.1.0",
+      "data": {
+        "version": "2.1.0",
+        "packageName": "javascript-stringify",
+        "hash": "10c0/374e74ebff29b94de78da39daa6e530999c58a145aeb293dc21180c4584459b14d9e5721d9bc6ed4eba319c437ef0145c157c946b70ecddcff6668682a002bcc"
+      }
+    },
     "npm:jest-diff@29.7.0": {
       "type": "npm",
       "name": "npm:jest-diff@29.7.0",
@@ -4466,6 +4951,15 @@
         "hash": "10c0/7579ff94e899e2f76ab64491d76cf606274c874d8f2af4a442c016bd85688927fcfca157ba6bf74b08e9439dc010b248ce05b96cc7c126a354c3bae7fcb48b7f"
       }
     },
+    "npm:media-query-parser@2.0.2": {
+      "type": "npm",
+      "name": "npm:media-query-parser@2.0.2",
+      "data": {
+        "version": "2.0.2",
+        "packageName": "media-query-parser",
+        "hash": "10c0/91a987e9f6620f5c7d0fcf22bd0a106bbaccdef96aba62c461656ee656e141dd2b60f2f1d99411799183c2ea993bd177ca92c26c08bf321fbc0c846ab391d79c"
+      }
+    },
     "npm:merge2@1.4.1": {
       "type": "npm",
       "name": "npm:merge2@1.4.1",
@@ -4626,6 +5120,24 @@
         "version": "3.0.1",
         "packageName": "mkdirp",
         "hash": "10c0/9f2b975e9246351f5e3a40dcfac99fcd0baa31fbfab615fe059fb11e51f10e4803c63de1f384c54d656e4db31d000e4767e9ef076a22e12a641357602e31d57d"
+      }
+    },
+    "npm:mlly@1.7.4": {
+      "type": "npm",
+      "name": "npm:mlly@1.7.4",
+      "data": {
+        "version": "1.7.4",
+        "packageName": "mlly",
+        "hash": "10c0/69e738218a13d6365caf930e0ab4e2b848b84eec261597df9788cefb9930f3e40667be9cb58a4718834ba5f97a6efeef31d3b5a95f4388143fd4e0d0deff72ff"
+      }
+    },
+    "npm:modern-ahocorasick@1.1.0": {
+      "type": "npm",
+      "name": "npm:modern-ahocorasick@1.1.0",
+      "data": {
+        "version": "1.1.0",
+        "packageName": "modern-ahocorasick",
+        "hash": "10c0/63fda0dab6f39886970550f5e37c4ea41cfe0c69573a7371ebc3b2db5993ed5cf4aef3e2e454e6d730992cbd4482ed9d641509c038f2ca661ccb939d822cb3ad"
       }
     },
     "npm:ms@2.1.3": {
@@ -4952,6 +5464,15 @@
         "hash": "10c0/666f6973f332f27581371efaf303fd6c272cc43c2057b37aa99e3643158c7e4b2626549555d88626e99ea9e046f82f32e41bbde5f1508547e9a11b149b52387c"
       }
     },
+    "npm:pathe@2.0.3": {
+      "type": "npm",
+      "name": "npm:pathe@2.0.3",
+      "data": {
+        "version": "2.0.3",
+        "packageName": "pathe",
+        "hash": "10c0/c118dc5a8b5c4166011b2b70608762e260085180bb9e33e80a50dcdb1e78c010b1624f4280c492c92b05fc276715a4c357d1f9edc570f8f1b3d90b6839ebaca1"
+      }
+    },
     "npm:pegjs@0.10.0": {
       "type": "npm",
       "name": "npm:pegjs@0.10.0",
@@ -4977,6 +5498,15 @@
         "version": "2.3.1",
         "packageName": "picomatch",
         "hash": "10c0/26c02b8d06f03206fc2ab8d16f19960f2ff9e81a658f831ecb656d8f17d9edc799e8364b1f4a7873e89d9702dff96204be0fa26fe4181f6843f040f819dac4be"
+      }
+    },
+    "npm:pkg-types@1.3.1": {
+      "type": "npm",
+      "name": "npm:pkg-types@1.3.1",
+      "data": {
+        "version": "1.3.1",
+        "packageName": "pkg-types",
+        "hash": "10c0/19e6cb8b66dcc66c89f2344aecfa47f2431c988cfa3366bdfdcfb1dd6695f87dcce37fbd90fe9d1605e2f4440b77f391e83c23255347c35cf84e7fd774d7fcea"
       }
     },
     "npm:possible-typed-array-names@1.1.0": {
@@ -5166,6 +5696,15 @@
         "version": "2.1.1",
         "packageName": "require-directory",
         "hash": "10c0/83aa76a7bc1531f68d92c75a2ca2f54f1b01463cb566cf3fbc787d0de8be30c9dbc211d1d46be3497dac5785fe296f2dd11d531945ac29730643357978966e99"
+      }
+    },
+    "npm:require-like@0.1.2": {
+      "type": "npm",
+      "name": "npm:require-like@0.1.2",
+      "data": {
+        "version": "0.1.2",
+        "packageName": "require-like",
+        "hash": "10c0/9035ff6c4000a56ede6fc51dd5c56541fafa5a7dddc9b1c3a5f9148d95ee21c603c9bf5c6e37b19fc7de13d9294260842d8590b2ffd6c7c773e78603d1af8050"
       }
     },
     "npm:requireindex@1.2.0": {
@@ -5897,6 +6436,15 @@
         "hash": "10c0/b7580d716cf1824736cc6e628ab4cd8b51877408ba2be0869d2866da35ef8366dd6ae9eb9d0851470a39be17cbd61df1126f9e211d8799d764ea7431d5435afa"
       }
     },
+    "npm:ufo@1.5.4": {
+      "type": "npm",
+      "name": "npm:ufo@1.5.4",
+      "data": {
+        "version": "1.5.4",
+        "packageName": "ufo",
+        "hash": "10c0/b5dc4dc435c49c9ef8890f1b280a19ee4d0954d1d6f9ab66ce62ce64dd04c7be476781531f952a07c678d51638d02ad4b98e16237be29149295b0f7c09cda765"
+      }
+    },
     "npm:unbox-primitive@1.1.0": {
       "type": "npm",
       "name": "npm:unbox-primitive@1.1.0",
@@ -6160,6 +6708,53 @@
     }
   },
   "dependencies": {
+    "@jm/react-components-layout": [
+      {
+        "source": "@jm/react-components-layout",
+        "target": "@jm/themes",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-layout",
+        "target": "npm:react@19.0.0",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-layout",
+        "target": "@jm/esbuild-config",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-layout",
+        "target": "npm:@types/react@19.0.8",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-layout",
+        "target": "npm:@types/react-dom@19.0.3",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-layout",
+        "target": "npm:@vanilla-extract/css@1.17.1",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-layout",
+        "target": "npm:@vanilla-extract/esbuild-plugin@2.3.15",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-layout",
+        "target": "npm:react-dom@19.0.0",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-layout",
+        "target": "npm:typescript",
+        "type": "static"
+      }
+    ],
     "@jm/esbuild-config": [
       {
         "source": "@jm/esbuild-config",
@@ -6218,6 +6813,11 @@
       {
         "source": "test",
         "target": "npm:globals@15.15.0",
+        "type": "static"
+      },
+      {
+        "source": "test",
+        "target": "npm:typescript",
         "type": "static"
       },
       {
@@ -6466,6 +7066,13 @@
       {
         "source": "npm:@babel/parser@7.26.8",
         "target": "npm:@babel/types@7.26.8",
+        "type": "static"
+      }
+    ],
+    "npm:@babel/plugin-syntax-typescript@7.25.9": [
+      {
+        "source": "npm:@babel/plugin-syntax-typescript@7.25.9",
+        "target": "npm:@babel/helper-plugin-utils@7.26.5",
         "type": "static"
       }
     ],
@@ -7683,6 +8290,134 @@
       {
         "source": "npm:@typescript-eslint/visitor-keys@8.24.0",
         "target": "npm:eslint-visitor-keys@4.2.0",
+        "type": "static"
+      }
+    ],
+    "npm:@vanilla-extract/babel-plugin-debug-ids@1.2.0": [
+      {
+        "source": "npm:@vanilla-extract/babel-plugin-debug-ids@1.2.0",
+        "target": "npm:@babel/core@7.26.8",
+        "type": "static"
+      }
+    ],
+    "npm:@vanilla-extract/css@1.17.1": [
+      {
+        "source": "npm:@vanilla-extract/css@1.17.1",
+        "target": "npm:@emotion/hash@0.9.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@vanilla-extract/css@1.17.1",
+        "target": "npm:@vanilla-extract/private@1.0.6",
+        "type": "static"
+      },
+      {
+        "source": "npm:@vanilla-extract/css@1.17.1",
+        "target": "npm:css-what@6.1.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:@vanilla-extract/css@1.17.1",
+        "target": "npm:cssesc@3.0.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:@vanilla-extract/css@1.17.1",
+        "target": "npm:csstype@3.1.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:@vanilla-extract/css@1.17.1",
+        "target": "npm:dedent@1.5.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:@vanilla-extract/css@1.17.1",
+        "target": "npm:deep-object-diff@1.1.9",
+        "type": "static"
+      },
+      {
+        "source": "npm:@vanilla-extract/css@1.17.1",
+        "target": "npm:deepmerge@4.3.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@vanilla-extract/css@1.17.1",
+        "target": "npm:lru-cache@10.4.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:@vanilla-extract/css@1.17.1",
+        "target": "npm:media-query-parser@2.0.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@vanilla-extract/css@1.17.1",
+        "target": "npm:modern-ahocorasick@1.1.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:@vanilla-extract/css@1.17.1",
+        "target": "npm:picocolors@1.1.1",
+        "type": "static"
+      }
+    ],
+    "npm:@vanilla-extract/esbuild-plugin@2.3.15": [
+      {
+        "source": "npm:@vanilla-extract/esbuild-plugin@2.3.15",
+        "target": "npm:@vanilla-extract/integration@8.0.1",
+        "type": "static"
+      }
+    ],
+    "npm:@vanilla-extract/integration@8.0.1": [
+      {
+        "source": "npm:@vanilla-extract/integration@8.0.1",
+        "target": "npm:@babel/core@7.26.8",
+        "type": "static"
+      },
+      {
+        "source": "npm:@vanilla-extract/integration@8.0.1",
+        "target": "npm:@babel/plugin-syntax-typescript@7.25.9",
+        "type": "static"
+      },
+      {
+        "source": "npm:@vanilla-extract/integration@8.0.1",
+        "target": "npm:@vanilla-extract/babel-plugin-debug-ids@1.2.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:@vanilla-extract/integration@8.0.1",
+        "target": "npm:@vanilla-extract/css@1.17.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@vanilla-extract/integration@8.0.1",
+        "target": "npm:dedent@1.5.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:@vanilla-extract/integration@8.0.1",
+        "target": "npm:esbuild@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:@vanilla-extract/integration@8.0.1",
+        "target": "npm:eval@0.1.8",
+        "type": "static"
+      },
+      {
+        "source": "npm:@vanilla-extract/integration@8.0.1",
+        "target": "npm:find-up@5.0.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:@vanilla-extract/integration@8.0.1",
+        "target": "npm:javascript-stringify@2.1.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:@vanilla-extract/integration@8.0.1",
+        "target": "npm:mlly@1.7.4",
         "type": "static"
       }
     ],
@@ -9114,6 +9849,133 @@
         "type": "static"
       }
     ],
+    "npm:esbuild@0.25.0": [
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/aix-ppc64@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/android-arm@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/android-arm64@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/android-x64@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/darwin-arm64@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/darwin-x64@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/freebsd-arm64@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/freebsd-x64@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/linux-arm@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/linux-arm64@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/linux-ia32@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/linux-loong64@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/linux-mips64el@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/linux-ppc64@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/linux-riscv64@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/linux-s390x@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/linux-x64@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/netbsd-arm64@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/netbsd-x64@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/openbsd-arm64@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/openbsd-x64@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/sunos-x64@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/win32-arm64@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/win32-ia32@0.25.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:esbuild@0.25.0",
+        "target": "npm:@esbuild/win32-x64@0.25.0",
+        "type": "static"
+      }
+    ],
     "npm:eslint-import-resolver-node@0.3.9": [
       {
         "source": "npm:eslint-import-resolver-node@0.3.9",
@@ -9913,6 +10775,18 @@
       {
         "source": "npm:esrecurse@4.3.0",
         "target": "npm:estraverse@5.3.0",
+        "type": "static"
+      }
+    ],
+    "npm:eval@0.1.8": [
+      {
+        "source": "npm:eval@0.1.8",
+        "target": "npm:@types/node@22.13.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:eval@0.1.8",
+        "target": "npm:require-like@0.1.2",
         "type": "static"
       }
     ],
@@ -10983,6 +11857,13 @@
         "type": "static"
       }
     ],
+    "npm:media-query-parser@2.0.2": [
+      {
+        "source": "npm:media-query-parser@2.0.2",
+        "target": "npm:@babel/runtime@7.26.7",
+        "type": "static"
+      }
+    ],
     "npm:micromatch@4.0.8": [
       {
         "source": "npm:micromatch@4.0.8",
@@ -11089,6 +11970,28 @@
       {
         "source": "npm:minizlib@3.0.1",
         "target": "npm:rimraf@5.0.10",
+        "type": "static"
+      }
+    ],
+    "npm:mlly@1.7.4": [
+      {
+        "source": "npm:mlly@1.7.4",
+        "target": "npm:acorn@8.14.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:mlly@1.7.4",
+        "target": "npm:pathe@2.0.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:mlly@1.7.4",
+        "target": "npm:pkg-types@1.3.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:mlly@1.7.4",
+        "target": "npm:ufo@1.5.4",
         "type": "static"
       }
     ],
@@ -11664,6 +12567,23 @@
       {
         "source": "npm:path-scurry@1.11.1",
         "target": "npm:minipass@7.1.2",
+        "type": "static"
+      }
+    ],
+    "npm:pkg-types@1.3.1": [
+      {
+        "source": "npm:pkg-types@1.3.1",
+        "target": "npm:confbox@0.1.8",
+        "type": "static"
+      },
+      {
+        "source": "npm:pkg-types@1.3.1",
+        "target": "npm:mlly@1.7.4",
+        "type": "static"
+      },
+      {
+        "source": "npm:pkg-types@1.3.1",
+        "target": "npm:pathe@2.0.3",
         "type": "static"
       }
     ],
@@ -13136,5 +14056,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1739450556653
+  "computedAt": 1739454584039
 }
