@@ -1,0 +1,21 @@
+{
+  "name": "@jm/storybook",
+  "packageManager": "yarn@4.6.0",
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.4",
+    "@storybook/addon-essentials": "^8.5.5",
+    "@storybook/addon-interactions": "^8.5.5",
+    "@storybook/addon-onboarding": "^8.5.5",
+    "@storybook/blocks": "^8.5.5",
+    "@storybook/react": "^8.5.5",
+    "@storybook/react-vite": "^8.5.5",
+    "@storybook/test": "^8.5.5",
+    "prop-types": "^15.8.1",
+    "storybook": "^8.5.5",
+    "vite": "^6.1.0"
+  },
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  }
+}

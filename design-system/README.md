@@ -78,10 +78,17 @@ Vite
 - Development의 사전 번들링에서는 esbuild 사용
 
 ### FileSystem 기반 설치
+
 npm i file:../../packages/themes
 
 ### Yarn berry와 IDE 충돌 해결 방법
+
 yarn dlx @yarnpkg/sdks vscode
 
 ### yarn berry 관련 세팅 문제
+
 https://usage.tistory.com/172
+
+### 스토리북 설치
+
+yarn workspace @jm/storybook dlx storybook init --type react
