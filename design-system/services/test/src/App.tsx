@@ -3,12 +3,14 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import { ThemeProvider } from "@emotion/react";
-import { vars } from "@jm/themes";
+import { vars, classes } from "@jm/themes";
 import styled from "@emotion/styled";
 
 function App() {
+  console.dir(classes);
   const theme = {
     colors: vars.colors.$static.light,
+    typography: classes,
   };
   return (
     <ThemeProvider theme={theme}>
@@ -32,7 +34,7 @@ const View = () => {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <p className="heading2xl">Vite + React</p>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -52,9 +54,13 @@ const View = () => {
 
 const Text = styled.p`
   color: ${({ theme }) => {
-    // @ts-ignore
+    // @ts-expect-error
     return theme.colors.red[900];
   }};
+  ${({ theme }) => {
+    // @ts-expect-error
+    return theme.typography.heading["4xl"];
+  }}
 `;
 
 const Text2 = styled.p`
