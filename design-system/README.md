@@ -79,3 +79,6 @@ Vite
 
 ### FileSystem 기반 설치
 npm i file:../../packages/themes
+
+### Yarn berry와 IDE 충돌 해결 방법
+yarn dlx @yarnpkg/sdks vscode

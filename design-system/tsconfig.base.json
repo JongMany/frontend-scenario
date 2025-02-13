@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "declaration": true, // ✅ 타입 선언 파일 생성
+    "declarationMap": true, // ✅ 타입 선언 파일과 원본 연결
+    "declarationDir": "dist", // 👈 타입 파일을 `dist/`에 저장
+    "strict": true,
+    "moduleResolution": "node",
+    "jsx": "react-jsx"
+  }
+}
