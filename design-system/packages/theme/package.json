@@ -1,16 +1,27 @@
 {
   "name": "@jm/themes",
   "version": "0.0.1",
+  "type": "module",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
+    "./*": {
+      "import": {
+        "types": "./esm/*.d.mts",
+        "default": "./esm/*.mjs"
+      },
+      "default": {
+        "types": "./*.d.ts",
+        "default": "./*.js"
+      }
+    },
     "./themes.css": "./dist/themes.css"
   },
-  "type": "module",
   "scripts": {
     "build:cjs": "esbuild src/index.js --format=cjs --minify --bundle --outfile=dist/index.js",
     "build:esm": "esbuild src/index.js --format=esm --minify --bundle --outfile=dist/index.js",
