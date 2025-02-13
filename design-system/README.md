@@ -82,3 +82,6 @@ npm i file:../../packages/themes
 
 ### Yarn berry와 IDE 충돌 해결 방법
 yarn dlx @yarnpkg/sdks vscode
+
+### yarn berry 관련 세팅 문제
+https://usage.tistory.com/172
