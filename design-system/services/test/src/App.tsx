@@ -12,6 +12,7 @@ function App() {
     colors: vars.colors.$static.light,
     typography: classes,
   };
+
   return (
     <ThemeProvider theme={theme}>
       <View />
@@ -54,11 +55,9 @@ const View = () => {
 
 const Text = styled.p`
   color: ${({ theme }) => {
-    // @ts-expect-error
     return theme.colors.red[900];
   }};
   ${({ theme }) => {
-    // @ts-expect-error
     return theme.typography.heading["4xl"];
   }}
 `;
