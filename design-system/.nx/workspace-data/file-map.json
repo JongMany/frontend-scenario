@@ -1,0 +1,195 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.4.3",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": false
+    }
+  },
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "nx.json",
+        "hash": "4385397610777163596"
+      },
+      {
+        "file": "README.md",
+        "hash": "14444465500375027951"
+      },
+      {
+        "file": "yarn.lock",
+        "hash": "15255603573678236547"
+      },
+      {
+        "file": "package.json",
+        "hash": "16449091002313184765"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "10162153164078839709"
+      }
+    ],
+    "projectFileMap": {
+      "test": [
+        {
+          "file": "services/test/.gitignore",
+          "hash": "13046175384202504187"
+        },
+        {
+          "file": "services/test/README.md",
+          "hash": "5222898940979069107"
+        },
+        {
+          "file": "services/test/eslint.config.js",
+          "hash": "16145672096969245511"
+        },
+        {
+          "file": "services/test/index.html",
+          "hash": "589677085047304085"
+        },
+        {
+          "file": "services/test/package.json",
+          "hash": "4786705674030149933",
+          "deps": [
+            "npm:@eslint/js@9.20.0",
+            "npm:@types/react@19.0.8",
+            "npm:@types/react-dom@19.0.3",
+            "npm:@vitejs/plugin-react@4.3.4",
+            "npm:eslint@9.20.1",
+            "npm:eslint-plugin-react-hooks@5.1.0",
+            "npm:eslint-plugin-react-refresh@0.4.19",
+            "npm:globals@15.15.0",
+            "npm:typescript@5.7.3",
+            "npm:typescript-eslint@8.24.0",
+            "npm:vite@6.1.0",
+            "npm:@emotion/react@11.14.0",
+            "npm:@emotion/styled@11.14.0",
+            "@jm/themes",
+            "npm:react@19.0.0",
+            "npm:react-dom@19.0.0"
+          ]
+        },
+        {
+          "file": "services/test/public/vite.svg",
+          "hash": "16046085400642193116"
+        },
+        {
+          "file": "services/test/src/App.css",
+          "hash": "3739391659270974612"
+        },
+        {
+          "file": "services/test/src/App.tsx",
+          "hash": "4538897048681401989"
+        },
+        {
+          "file": "services/test/src/assets/react.svg",
+          "hash": "16069471864800376455"
+        },
+        {
+          "file": "services/test/src/constants/theme.ts",
+          "hash": "5290803179313397847"
+        },
+        {
+          "file": "services/test/src/index.css",
+          "hash": "12387368823762224523"
+        },
+        {
+          "file": "services/test/src/main.tsx",
+          "hash": "9458083263193301196"
+        },
+        {
+          "file": "services/test/src/styles/emotion.d.ts",
+          "hash": "1454978617103590409"
+        },
+        {
+          "file": "services/test/src/vite-env.d.ts",
+          "hash": "12946363841406869089"
+        },
+        {
+          "file": "services/test/tsconfig.app.json",
+          "hash": "2323919910019125824"
+        },
+        {
+          "file": "services/test/tsconfig.json",
+          "hash": "2365188958523842680"
+        },
+        {
+          "file": "services/test/tsconfig.node.json",
+          "hash": "4200375265648421840"
+        },
+        {
+          "file": "services/test/vite.config.ts",
+          "hash": "16225914092815047172"
+        }
+      ],
+      "@jm/themes": [
+        {
+          "file": "packages/theme/esbuild.js",
+          "hash": "6137509134427139511"
+        },
+        {
+          "file": "packages/theme/package.json",
+          "hash": "14834929345554946561",
+          "deps": [
+            "npm:esbuild@0.16.17",
+            "npm:typescript@5.7.3"
+          ]
+        },
+        {
+          "file": "packages/theme/scripts/build-css-module.js",
+          "hash": "9510281333550741333"
+        },
+        {
+          "file": "packages/theme/src/classes/index.ts",
+          "hash": "4064216934199408212"
+        },
+        {
+          "file": "packages/theme/src/classes/typography.ts",
+          "hash": "4613592670763236173"
+        },
+        {
+          "file": "packages/theme/src/index.ts",
+          "hash": "5051740342712927388"
+        },
+        {
+          "file": "packages/theme/src/variables/box/index.ts",
+          "hash": "10339331187406748197"
+        },
+        {
+          "file": "packages/theme/src/variables/colors/index.ts",
+          "hash": "16067044052561609752"
+        },
+        {
+          "file": "packages/theme/src/variables/colors/scale.ts",
+          "hash": "7227875050283308958"
+        },
+        {
+          "file": "packages/theme/src/variables/colors/static/dark.ts",
+          "hash": "681337314988286385"
+        },
+        {
+          "file": "packages/theme/src/variables/colors/static/index.ts",
+          "hash": "17639848047638776056"
+        },
+        {
+          "file": "packages/theme/src/variables/colors/static/light.ts",
+          "hash": "5111065768491833496"
+        },
+        {
+          "file": "packages/theme/src/variables/index.ts",
+          "hash": "17288868138055620940"
+        },
+        {
+          "file": "packages/theme/src/variables/typography/index.ts",
+          "hash": "15749593622752628120"
+        },
+        {
+          "file": "packages/theme/tsconfig.json",
+          "hash": "8394301305408680762"
+        }
+      ]
+    }
+  }
+}

@@ -29,7 +29,7 @@
     "build:ts": "tsc --emitDeclarationOnly",
     "build:css": "node ./scripts/build-css-module.js",
     "clean": "rm -rf dist",
-    "build": "npm run clean && npm run build:js && npm run build:ts && npm run build:css"
+    "build": "yarn clean && yarn build:js && yarn build:ts && yarn build:css"
   },
   "devDependencies": {
     "esbuild": "^0.16.17",
