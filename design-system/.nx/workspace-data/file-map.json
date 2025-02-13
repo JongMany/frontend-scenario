@@ -9,112 +9,6 @@
     }
   },
   "fileMap": {
-    "nonProjectFiles": [
-      {
-        "file": ".yarn/sdks/typescript/package.json",
-        "hash": "17206875969844469184"
-      },
-      {
-        "file": ".yarn/sdks/eslint/lib/unsupported-api.js",
-        "hash": "10989494384090494064"
-      },
-      {
-        "file": ".yarn/sdks/prettier/index.cjs",
-        "hash": "3393616046143878484"
-      },
-      {
-        "file": ".yarn/sdks/typescript/lib/typescript.js",
-        "hash": "2824640601725886217"
-      },
-      {
-        "file": ".yarn/sdks/typescript/lib/tsserverlibrary.js",
-        "hash": "1451277444867543573"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "2052412003981761678"
-      },
-      {
-        "file": ".yarn/sdks/prettier/bin/prettier.cjs",
-        "hash": "1386140985451125376"
-      },
-      {
-        "file": ".yarn/sdks/typescript/bin/tsserver",
-        "hash": "6819096246728401411"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "639052610794909976"
-      },
-      {
-        "file": ".yarn/sdks/prettier/package.json",
-        "hash": "15420624695708364116"
-      },
-      {
-        "file": ".yarn/sdks/typescript/lib/tsc.js",
-        "hash": "2839614163630542371"
-      },
-      {
-        "file": ".vscode/settings.json",
-        "hash": "16896003314874278195"
-      },
-      {
-        "file": ".yarn/sdks/eslint/package.json",
-        "hash": "979153938861060082"
-      },
-      {
-        "file": "README.md",
-        "hash": "12409974047566853153"
-      },
-      {
-        "file": ".yarn/sdks/eslint/bin/eslint.js",
-        "hash": "14872269478262836979"
-      },
-      {
-        "file": "tsconfig.eslint.json",
-        "hash": "1169291880152018748"
-      },
-      {
-        "file": ".yarn/sdks/typescript/bin/tsc",
-        "hash": "13885846455737793067"
-      },
-      {
-        "file": "package.json",
-        "hash": "6993174859675160122"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "10535867006991962306"
-      },
-      {
-        "file": ".yarn/sdks/eslint/lib/api.js",
-        "hash": "11935524110648288742"
-      },
-      {
-        "file": ".yarn/sdks/typescript/lib/tsserver.js",
-        "hash": "1301760797202983736"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "12523739066542511251"
-      },
-      {
-        "file": ".yarn/sdks/integrations.yml",
-        "hash": "5703335058684100671"
-      },
-      {
-        "file": "nx.json",
-        "hash": "4385397610777163596"
-      },
-      {
-        "file": ".eslintrc.js",
-        "hash": "6235190018576920766"
-      },
-      {
-        "file": "yarn.lock",
-        "hash": "4323396258688114448"
-      }
-    ],
     "projectFileMap": {
       "@jm/esbuild-config": [
         {
@@ -232,7 +126,7 @@
         },
         {
           "file": "packages/react/components/layout/package.json",
-          "hash": "14744569185604800932",
+          "hash": "10176511835409297372",
           "deps": [
             "@jm/themes",
             "npm:react@19.0.0",
@@ -327,7 +221,183 @@
           "file": "packages/theme/tsconfig.json",
           "hash": "10248009443664204963"
         }
+      ],
+      "@jm/storybook": [
+        {
+          "file": "services/storybook/.storybook/main.js",
+          "hash": "8510975486091960327"
+        },
+        {
+          "file": "services/storybook/.storybook/preview.js",
+          "hash": "14857115373730768021"
+        },
+        {
+          "file": "services/storybook/README.md",
+          "hash": "2624393197388313932"
+        },
+        {
+          "file": "services/storybook/package.json",
+          "hash": "13459736732011818392",
+          "deps": [
+            "npm:@chromatic-com/storybook@3.2.4",
+            "npm:@storybook/addon-essentials@8.5.5",
+            "npm:@storybook/addon-interactions@8.5.5",
+            "npm:@storybook/addon-onboarding@8.5.5",
+            "npm:@storybook/blocks@8.5.5",
+            "npm:@storybook/react@8.5.5",
+            "npm:@storybook/react-vite@8.5.5",
+            "npm:@storybook/test@8.5.5",
+            "npm:prop-types@15.8.1",
+            "npm:storybook@8.5.5",
+            "npm:vite@6.1.0",
+            "npm:react@18.3.1",
+            "npm:react-dom@18.3.1",
+            "npm:react-is@18.3.1"
+          ]
+        },
+        {
+          "file": "services/storybook/stories/Button.jsx",
+          "hash": "12986092071811617979"
+        },
+        {
+          "file": "services/storybook/stories/Button.stories.js",
+          "hash": "3594232849628824490"
+        },
+        {
+          "file": "services/storybook/stories/Configure.mdx",
+          "hash": "16835221531458653271"
+        },
+        {
+          "file": "services/storybook/stories/Header.jsx",
+          "hash": "3459070527275302912"
+        },
+        {
+          "file": "services/storybook/stories/Header.stories.js",
+          "hash": "4110672376969930675"
+        },
+        {
+          "file": "services/storybook/stories/Page.jsx",
+          "hash": "9187524157874563709"
+        },
+        {
+          "file": "services/storybook/stories/Page.stories.js",
+          "hash": "7953640794421993716"
+        },
+        {
+          "file": "services/storybook/stories/assets/accessibility.png",
+          "hash": "8320090732909952534"
+        },
+        {
+          "file": "services/storybook/stories/assets/accessibility.svg",
+          "hash": "16177534588519463864"
+        },
+        {
+          "file": "services/storybook/stories/assets/addon-library.png",
+          "hash": "16374768047356923990"
+        },
+        {
+          "file": "services/storybook/stories/assets/assets.png",
+          "hash": "1689741917386238418"
+        },
+        {
+          "file": "services/storybook/stories/assets/avif-test-image.avif",
+          "hash": "4094029619605446073"
+        },
+        {
+          "file": "services/storybook/stories/assets/context.png",
+          "hash": "1348985643342670004"
+        },
+        {
+          "file": "services/storybook/stories/assets/discord.svg",
+          "hash": "14673658905008310428"
+        },
+        {
+          "file": "services/storybook/stories/assets/docs.png",
+          "hash": "18280049778802555454"
+        },
+        {
+          "file": "services/storybook/stories/assets/figma-plugin.png",
+          "hash": "6723570263244528263"
+        },
+        {
+          "file": "services/storybook/stories/assets/github.svg",
+          "hash": "8780849867998685716"
+        },
+        {
+          "file": "services/storybook/stories/assets/share.png",
+          "hash": "2975175390326490054"
+        },
+        {
+          "file": "services/storybook/stories/assets/styling.png",
+          "hash": "7588361746934983524"
+        },
+        {
+          "file": "services/storybook/stories/assets/testing.png",
+          "hash": "9937432921968504604"
+        },
+        {
+          "file": "services/storybook/stories/assets/theming.png",
+          "hash": "10878554446503237882"
+        },
+        {
+          "file": "services/storybook/stories/assets/tutorials.svg",
+          "hash": "14213303528406854315"
+        },
+        {
+          "file": "services/storybook/stories/assets/youtube.svg",
+          "hash": "6388426534316490904"
+        },
+        {
+          "file": "services/storybook/stories/button.css",
+          "hash": "16190920320087051447"
+        },
+        {
+          "file": "services/storybook/stories/header.css",
+          "hash": "14526687290905363219"
+        },
+        {
+          "file": "services/storybook/stories/page.css",
+          "hash": "6442544410431894269"
+        }
       ]
-    }
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".eslintrc.js",
+        "hash": "6235190018576920766"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "2052412003981761678"
+      },
+      {
+        "file": ".yarn/install-state.gz",
+        "hash": "1739251769527006343"
+      },
+      {
+        "file": "README.md",
+        "hash": "6913391770818356503"
+      },
+      {
+        "file": "nx.json",
+        "hash": "4385397610777163596"
+      },
+      {
+        "file": "package.json",
+        "hash": "6993174859675160122"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "639052610794909976"
+      },
+      {
+        "file": "tsconfig.eslint.json",
+        "hash": "1169291880152018748"
+      },
+      {
+        "file": "yarn.lock",
+        "hash": "14501587524681110411"
+      }
+    ]
   }
 }
