@@ -19,13 +19,15 @@ const config = {
     getAbsolutePath("@storybook/addon-essentials"),
     getAbsolutePath("@storybook/addon-onboarding"),
     getAbsolutePath("@storybook/addon-interactions"),
+    "@chromatic-com/storybook"
   ],
   framework: {
     name: getAbsolutePath("@storybook/react-vite"),
     options: {},
   },
-  docs: {
-    autodocs: "tag",
+  docs: {},
+  typescript: {
+    reactDocgen: "react-docgen-typescript", // ✅ react-docgen-typescript 사용
   },
 };
 export default config;
