@@ -12,3 +12,9 @@ export {Flex} from "./Flex";
 export type {
   FlexProps
 } from "./types"
+
+export {Grid} from "./Grid";
+export type {
+  GridProps,
+  GridItemProps
+} from "./types"
