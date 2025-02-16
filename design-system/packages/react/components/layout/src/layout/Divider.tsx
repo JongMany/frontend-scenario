@@ -8,7 +8,9 @@ const Divider = (props: DividerProps, ref: React.Ref<HTMLHRElement>) => {
   const borderStyle = orientation === "horizontal" ? {
     width: '100%',
     borderWidth: `0 0 ${size}px 0`,
+    height: 0,
   } : {
+    width: 0,
     height: '100%',
     borderWidth: `0 0 0 ${size}px`,
   }
@@ -18,7 +20,7 @@ const Divider = (props: DividerProps, ref: React.Ref<HTMLHRElement>) => {
     borderColor: vars.colors.$scale?.[color]?.[200] || color,
     ...borderStyle,
     ...props.style
-  }}/>
+  }} />
 }
 
 const _Divider = React.forwardRef(Divider);
