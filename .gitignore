@@ -28,3 +28,17 @@ dist
 .env
 **/.env
 *storybook.log
+
+**/.nx/*
+**/.nx/**/*
+**/.nx-cache
+**/.nx
+**/.verdaccio/build/local-registry
+**/graph/client/src/assets/environment.js
+**/graph/client/src/assets/dev/environment.js
+**/graph/client/src/assets/generated-project-graphs
+**/graph/client/src/assets/generated-task-graphs
+**/graph/client/src/assets/generated-task-inputs
+**/graph/client/src/assets/generated-source-maps
+**/nx-dev/nx-dev/public/documentation
+**/nx-dev/nx-dev/public/images/open-graph
