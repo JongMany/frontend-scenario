@@ -12,12 +12,12 @@
 // };
 
 // export default preview;
-
-const isVisualTest = process.env.STORYBOOK_VISUAL_TEST === "true"; // ✅ 환경 변수 체크
+import "@jm/themes/themes.css"
+// const isVisualTest = process.env.STORYBOOK_VISUAL_TEST === "true"; // ✅ 환경 변수 체크
 
 const preview = {
   parameters: {
-    actions: isVisualTest ? undefined : { argTypesRegex: "^on[A-Z].*" }, // ✅ visual test에서는 비활성화
+    // actions: isVisualTest ? undefined : { argTypesRegex: "^on[A-Z].*" }, // ✅ visual test에서는 비활성화
     controls: {
       matchers: {
         color: /(background|color)$/i,
