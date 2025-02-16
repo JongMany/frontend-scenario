@@ -15,7 +15,7 @@ const Grid = (props: GridProps, ref: React.Ref<HTMLElement>) => {
     ref,
     className: clsx([StyleSprinkles(extractSprinkleProps(props, Array.from(StyleSprinkles.properties))), props.className]),    
     style: {
-      display: 'flex',
+      display: 'grid',
       gridAutoColumns: autoColumns,
       gridAutoFlow: autoFlow,
       gridAutoRows: autoRows,
