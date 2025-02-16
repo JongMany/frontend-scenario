@@ -206,6 +206,10 @@
       "packages/react/components/layout/package.json",
       "nx/core/package-json"
     ],
+    "metadata.targetGroups.NPM Scripts.6": [
+      "packages/react/components/layout/package.json",
+      "nx/core/package-json"
+    ],
     "metadata.js": [
       "packages/react/components/layout/package.json",
       "nx/core/package-json"
@@ -395,6 +399,34 @@
       "nx/core/package-json"
     ],
     "targets.build.metadata.runCommand": [
+      "packages/react/components/layout/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev": [
+      "packages/react/components/layout/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.executor": [
+      "packages/react/components/layout/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.options": [
+      "packages/react/components/layout/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.metadata": [
+      "packages/react/components/layout/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.options.script": [
+      "packages/react/components/layout/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.metadata.scriptContent": [
+      "packages/react/components/layout/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.metadata.runCommand": [
       "packages/react/components/layout/package.json",
       "nx/core/package-json"
     ],

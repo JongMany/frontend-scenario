@@ -9,104 +9,351 @@
     }
   },
   "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".nx/workspace-data/905C954B-C6A0-59DC-A62F-2121CD42964A.db-wal",
+        "hash": "4584564735531489128"
+      },
+      {
+        "file": ".yarn/install-state.gz",
+        "hash": "4219857730239398636"
+      },
+      {
+        "file": ".nx/workspace-data/source-maps.json",
+        "hash": "2932970324902684257"
+      },
+      {
+        "file": ".nx/workspace-data/parsed-lock-file.json",
+        "hash": "14988214366844373053"
+      },
+      {
+        "file": "yarn.lock",
+        "hash": "402506643353546133"
+      },
+      {
+        "file": ".nx/workspace-data/project-graph.json",
+        "hash": "6645368738949248944"
+      },
+      {
+        "file": ".yarnrc.yml",
+        "hash": "625637690827025316"
+      },
+      {
+        "file": ".nx/workspace-data/lockfile.hash",
+        "hash": "8926972857555596546"
+      },
+      {
+        "file": ".eslintrc.js",
+        "hash": "6235190018576920766"
+      },
+      {
+        "file": "package.json",
+        "hash": "3710251419103671780"
+      },
+      {
+        "file": "README.md",
+        "hash": "6913391770818356503"
+      },
+      {
+        "file": "tsconfig.eslint.json",
+        "hash": "1169291880152018748"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "2052412003981761678"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "639052610794909976"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json",
+        "hash": "15386030265730824467"
+      },
+      {
+        "file": ".nx/workspace-data/905C954B-C6A0-59DC-A62F-2121CD42964A.db-shm",
+        "hash": "14746379895695489980"
+      },
+      {
+        "file": "nx.json",
+        "hash": "4385397610777163596"
+      }
+    ],
     "projectFileMap": {
-      "@jm/themes": [
-        {
-          "file": "packages/theme/esbuild.js",
-          "hash": "12125171911378713810"
-        },
-        {
-          "file": "packages/theme/package.json",
-          "hash": "4688260629432864889",
-          "deps": [
-            "@jm/esbuild-config",
-            "npm:typescript"
-          ]
-        },
-        {
-          "file": "packages/theme/scripts/build-css-module.js",
-          "hash": "9510281333550741333"
-        },
-        {
-          "file": "packages/theme/src/classes/index.ts",
-          "hash": "4064216934199408212"
-        },
-        {
-          "file": "packages/theme/src/classes/typography.ts",
-          "hash": "4613592670763236173"
-        },
-        {
-          "file": "packages/theme/src/index.ts",
-          "hash": "5051740342712927388"
-        },
-        {
-          "file": "packages/theme/src/variables/box/index.ts",
-          "hash": "10339331187406748197"
-        },
-        {
-          "file": "packages/theme/src/variables/colors/index.ts",
-          "hash": "16067044052561609752"
-        },
-        {
-          "file": "packages/theme/src/variables/colors/scale.ts",
-          "hash": "7227875050283308958"
-        },
-        {
-          "file": "packages/theme/src/variables/colors/static/dark.ts",
-          "hash": "681337314988286385"
-        },
-        {
-          "file": "packages/theme/src/variables/colors/static/index.ts",
-          "hash": "17639848047638776056"
-        },
-        {
-          "file": "packages/theme/src/variables/colors/static/light.ts",
-          "hash": "5111065768491833496"
-        },
-        {
-          "file": "packages/theme/src/variables/index.ts",
-          "hash": "17288868138055620940"
-        },
-        {
-          "file": "packages/theme/src/variables/typography/index.ts",
-          "hash": "15749593622752628120"
-        },
-        {
-          "file": "packages/theme/tsconfig.json",
-          "hash": "10248009443664204963"
-        }
-      ],
       "@jm/storybook": [
         {
           "file": "services/storybook/.storybook/main.js",
-          "hash": "13299019232879951734"
+          "hash": "17489723434408826810"
         },
         {
           "file": "services/storybook/.storybook/preview.js",
-          "hash": "10598058749756030517"
+          "hash": "6515236223783349515"
         },
         {
           "file": "services/storybook/README.md",
           "hash": "2624393197388313932"
         },
         {
+          "file": "services/storybook/node_modules/.cache/sb-vite-plugin-externals/@storybook/channels.js",
+          "hash": "13243583567702204096"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/sb-vite-plugin-externals/@storybook/client-logger.js",
+          "hash": "3217323781484320378"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/sb-vite-plugin-externals/@storybook/core-events.js",
+          "hash": "321726088021708670"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/sb-vite-plugin-externals/@storybook/core-events/preview-errors.js",
+          "hash": "9054438998657051452"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/sb-vite-plugin-externals/@storybook/core/channels.js",
+          "hash": "13243583567702204096"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/sb-vite-plugin-externals/@storybook/core/client-logger.js",
+          "hash": "3217323781484320378"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/sb-vite-plugin-externals/@storybook/core/core-events.js",
+          "hash": "321726088021708670"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/sb-vite-plugin-externals/@storybook/core/preview-api.js",
+          "hash": "12200845980017081694"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/sb-vite-plugin-externals/@storybook/core/preview-errors.js",
+          "hash": "9054438998657051452"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/sb-vite-plugin-externals/@storybook/core/types.js",
+          "hash": "13071749519245180959"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/sb-vite-plugin-externals/@storybook/global.js",
+          "hash": "7546990545494865362"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/sb-vite-plugin-externals/@storybook/preview-api.js",
+          "hash": "12200845980017081694"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/sb-vite-plugin-externals/@storybook/types.js",
+          "hash": "13071749519245180959"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/sb-vite-plugin-externals/storybook/internal/channels.js",
+          "hash": "13243583567702204096"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/sb-vite-plugin-externals/storybook/internal/client-logger.js",
+          "hash": "3217323781484320378"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/sb-vite-plugin-externals/storybook/internal/core-events.js",
+          "hash": "321726088021708670"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/sb-vite-plugin-externals/storybook/internal/preview-api.js",
+          "hash": "12200845980017081694"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/sb-vite-plugin-externals/storybook/internal/preview-errors.js",
+          "hash": "9054438998657051452"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/sb-vite-plugin-externals/storybook/internal/types.js",
+          "hash": "13071749519245180959"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/chromatic-com-storybook-12/manager-bundle.js",
+          "hash": "8404042182252212033"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/chromatic-com-storybook-12/manager-bundle.js.LEGAL.txt",
+          "hash": "9089091398899460254"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/essentials-actions-3/manager-bundle.js",
+          "hash": "17524732115992119721"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/essentials-actions-3/manager-bundle.js.LEGAL.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/essentials-backgrounds-5/manager-bundle.js",
+          "hash": "7136633982673042969"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/essentials-backgrounds-5/manager-bundle.js.LEGAL.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/essentials-controls-2/manager-bundle.js",
+          "hash": "15762673327140904063"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/essentials-controls-2/manager-bundle.js.LEGAL.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/essentials-docs-4/manager-bundle.js",
+          "hash": "17975481365255220073"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/essentials-docs-4/manager-bundle.js.LEGAL.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/essentials-measure-8/manager-bundle.js",
+          "hash": "3054572270471579572"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/essentials-measure-8/manager-bundle.js.LEGAL.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/essentials-outline-9/manager-bundle.js",
+          "hash": "14802271256984201990"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/essentials-outline-9/manager-bundle.js.LEGAL.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/essentials-toolbars-7/manager-bundle.js",
+          "hash": "1679623110499474587"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/essentials-toolbars-7/manager-bundle.js.LEGAL.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/essentials-viewport-6/manager-bundle.js",
+          "hash": "17506777776573965293"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/essentials-viewport-6/manager-bundle.js.LEGAL.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/interactions-11/manager-bundle.js",
+          "hash": "14735851245637762358"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/interactions-11/manager-bundle.js.LEGAL.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/links-1/manager-bundle.js",
+          "hash": "15544356996408991427"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/links-1/manager-bundle.js.LEGAL.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/onboarding-10/manager-bundle.js",
+          "hash": "13377986547282933246"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/onboarding-10/manager-bundle.js.LEGAL.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/storybook-core-core-server-presets-0/common-manager-bundle.js",
+          "hash": "18415043629388664997"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/public/sb-addons/storybook-core-core-server-presets-0/common-manager-bundle.js.LEGAL.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/sb-manager/chromatic-com-storybook-12/manager-bundle.js",
+          "hash": "13563579625167792474"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/sb-manager/essentials-actions-3/manager-bundle.js",
+          "hash": "10426761043509876989"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/sb-manager/essentials-backgrounds-5/manager-bundle.js",
+          "hash": "9450102301610924930"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/sb-manager/essentials-controls-2/manager-bundle.js",
+          "hash": "15620522394619668497"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/sb-manager/essentials-docs-4/manager-bundle.js",
+          "hash": "8584493851686672787"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/sb-manager/essentials-measure-8/manager-bundle.js",
+          "hash": "6812594124955416508"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/sb-manager/essentials-outline-9/manager-bundle.js",
+          "hash": "3079296932723722002"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/sb-manager/essentials-toolbars-7/manager-bundle.js",
+          "hash": "10135530288062474228"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/sb-manager/essentials-viewport-6/manager-bundle.js",
+          "hash": "17808244431842451558"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/sb-manager/interactions-11/manager-bundle.js",
+          "hash": "14516937669858001188"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/sb-manager/links-1/manager-bundle.js",
+          "hash": "6229550880635611019"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/sb-manager/onboarding-10/manager-bundle.js",
+          "hash": "11022495824385800421"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/74492136cfc6a6fa34608f6b55085ad1f68a9d0ec702da77fcc4b4fbd970b561/sb-manager/storybook-core-core-server-presets-0/common-manager-bundle.js",
+          "hash": "7068364661959837861"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/default/dev-server/storybook-0c9aba2732f8798ca2ae104c09855acc",
+          "hash": "4764195541773802768"
+        },
+        {
+          "file": "services/storybook/node_modules/.cache/storybook/default/dev-server/storybook-21d6f40cfb511982e4424e0e250a9557",
+          "hash": "15774577556168948954"
+        },
+        {
           "file": "services/storybook/package.json",
-          "hash": "10209843526466396447",
+          "hash": "2833903189333303966",
           "deps": [
-            "npm:react",
-            "npm:react-dom",
+            "npm:react@18.3.1",
+            "npm:react-dom@18.3.1",
+            "npm:@chromatic-com/storybook",
+            "@jm/react-components-layout",
+            "@jm/themes",
             "npm:@storybook/addon-a11y",
             "npm:@storybook/addon-essentials",
             "npm:@storybook/addon-interactions",
-            "npm:@storybook/addon-links",
+            "npm:@storybook/addon-links@8.5.6",
             "npm:@storybook/addon-onboarding",
             "npm:@storybook/blocks",
-            "npm:@storybook/react",
-            "npm:@storybook/react-vite",
-            "npm:@storybook/testing-library",
+            "npm:@storybook/react@8.5.6",
+            "npm:@storybook/react-vite@8.5.6",
+            "npm:@storybook/test",
             "npm:@testing-library/dom",
             "npm:@testing-library/jest-dom",
-            "npm:@testing-library/react",
+            "npm:@testing-library/react@14.3.1",
             "npm:@testing-library/user-event",
             "npm:@vitejs/plugin-react",
             "npm:@vitest/ui",
@@ -115,169 +362,15 @@
             "npm:react-docgen-typescript",
             "npm:storybook",
             "npm:storybook-addon-pseudo-states",
-            "npm:storybook-addon-root-attributes",
+            "npm:storybook-addon-root-attributes@2.1.3",
             "npm:vite",
             "npm:vitest",
             "npm:react-is"
           ]
         },
         {
-          "file": "services/storybook/stories/Button.jsx",
-          "hash": "11139165705398809119"
-        },
-        {
-          "file": "services/storybook/stories/Button.stories.js",
-          "hash": "6041390569315058008"
-        },
-        {
-          "file": "services/storybook/stories/Configure.mdx",
-          "hash": "9165265778959664387"
-        },
-        {
-          "file": "services/storybook/stories/Header.jsx",
-          "hash": "18140798472310140440"
-        },
-        {
-          "file": "services/storybook/stories/Header.stories.js",
-          "hash": "14251447192868359655"
-        },
-        {
-          "file": "services/storybook/stories/Page.jsx",
-          "hash": "9187524157874563709"
-        },
-        {
-          "file": "services/storybook/stories/Page.stories.js",
-          "hash": "3350732631652160460"
-        },
-        {
-          "file": "services/storybook/stories/assets/accessibility.png",
-          "hash": "8320090732909952534"
-        },
-        {
-          "file": "services/storybook/stories/assets/accessibility.svg",
-          "hash": "15602003233623176060"
-        },
-        {
-          "file": "services/storybook/stories/assets/addon-library.png",
-          "hash": "16374768047356923990"
-        },
-        {
-          "file": "services/storybook/stories/assets/assets.png",
-          "hash": "1689741917386238418"
-        },
-        {
-          "file": "services/storybook/stories/assets/avif-test-image.avif",
-          "hash": "4094029619605446073"
-        },
-        {
-          "file": "services/storybook/stories/assets/context.png",
-          "hash": "1348985643342670004"
-        },
-        {
-          "file": "services/storybook/stories/assets/discord.svg",
-          "hash": "6125630960371971211"
-        },
-        {
-          "file": "services/storybook/stories/assets/docs.png",
-          "hash": "18280049778802555454"
-        },
-        {
-          "file": "services/storybook/stories/assets/figma-plugin.png",
-          "hash": "6723570263244528263"
-        },
-        {
-          "file": "services/storybook/stories/assets/github.svg",
-          "hash": "2312545202508444152"
-        },
-        {
-          "file": "services/storybook/stories/assets/share.png",
-          "hash": "2975175390326490054"
-        },
-        {
-          "file": "services/storybook/stories/assets/styling.png",
-          "hash": "7588361746934983524"
-        },
-        {
-          "file": "services/storybook/stories/assets/testing.png",
-          "hash": "9937432921968504604"
-        },
-        {
-          "file": "services/storybook/stories/assets/theming.png",
-          "hash": "10878554446503237882"
-        },
-        {
-          "file": "services/storybook/stories/assets/tutorials.svg",
-          "hash": "6526954541826200653"
-        },
-        {
-          "file": "services/storybook/stories/assets/youtube.svg",
-          "hash": "14842170009963527645"
-        },
-        {
-          "file": "services/storybook/stories/button.css",
-          "hash": "9641850067687118932"
-        },
-        {
-          "file": "services/storybook/stories/header.css",
-          "hash": "14910923732737524866"
-        },
-        {
-          "file": "services/storybook/stories/page.css",
-          "hash": "6483440631415612345"
-        }
-      ],
-      "@jm/esbuild-config": [
-        {
-          "file": "packages/esbuild-config/README.md",
-          "hash": "6886952344311067916"
-        },
-        {
-          "file": "packages/esbuild-config/index.js",
-          "hash": "2789728533718397977"
-        },
-        {
-          "file": "packages/esbuild-config/package.json",
-          "hash": "269219531314971243",
-          "deps": [
-            "npm:esbuild@0.16.17"
-          ]
-        }
-      ],
-      "@jm/react-components-layout": [
-        {
-          "file": "packages/react/components/layout/esbuild.js",
-          "hash": "10334568490550608125"
-        },
-        {
-          "file": "packages/react/components/layout/package.json",
-          "hash": "10176511835409297372",
-          "deps": [
-            "@jm/themes",
-            "npm:react@19.0.0",
-            "@jm/esbuild-config",
-            "npm:@types/react@19.0.8",
-            "npm:@types/react-dom@19.0.3",
-            "npm:@vanilla-extract/css@1.17.1",
-            "npm:@vanilla-extract/esbuild-plugin@2.3.15",
-            "npm:react-dom@19.0.0",
-            "npm:typescript"
-          ]
-        },
-        {
-          "file": "packages/react/components/layout/src/Block.css.ts",
-          "hash": "6820276000503252790"
-        },
-        {
-          "file": "packages/react/components/layout/src/Block.tsx",
-          "hash": "17174530068743326766"
-        },
-        {
-          "file": "packages/react/components/layout/src/index.ts",
-          "hash": "5425369313421556660"
-        },
-        {
-          "file": "packages/react/components/layout/tsconfig.json",
-          "hash": "11566056532330521231"
+          "file": "services/storybook/stories/ReactComponents/Layout/Block.stories.tsx",
+          "hash": "9389384415508654806"
         }
       ],
       "test": [
@@ -371,49 +464,151 @@
           "file": "services/test/vite.config.ts",
           "hash": "16225914092815047172"
         }
+      ],
+      "@jm/themes": [
+        {
+          "file": "packages/theme/esbuild.js",
+          "hash": "12125171911378713810"
+        },
+        {
+          "file": "packages/theme/package.json",
+          "hash": "4688260629432864889",
+          "deps": [
+            "@jm/esbuild-config",
+            "npm:typescript"
+          ]
+        },
+        {
+          "file": "packages/theme/scripts/build-css-module.js",
+          "hash": "9510281333550741333"
+        },
+        {
+          "file": "packages/theme/src/classes/index.ts",
+          "hash": "4064216934199408212"
+        },
+        {
+          "file": "packages/theme/src/classes/typography.ts",
+          "hash": "4613592670763236173"
+        },
+        {
+          "file": "packages/theme/src/index.ts",
+          "hash": "5051740342712927388"
+        },
+        {
+          "file": "packages/theme/src/variables/box/index.ts",
+          "hash": "10339331187406748197"
+        },
+        {
+          "file": "packages/theme/src/variables/colors/index.ts",
+          "hash": "16067044052561609752"
+        },
+        {
+          "file": "packages/theme/src/variables/colors/scale.ts",
+          "hash": "7227875050283308958"
+        },
+        {
+          "file": "packages/theme/src/variables/colors/static/dark.ts",
+          "hash": "681337314988286385"
+        },
+        {
+          "file": "packages/theme/src/variables/colors/static/index.ts",
+          "hash": "17639848047638776056"
+        },
+        {
+          "file": "packages/theme/src/variables/colors/static/light.ts",
+          "hash": "5111065768491833496"
+        },
+        {
+          "file": "packages/theme/src/variables/index.ts",
+          "hash": "17288868138055620940"
+        },
+        {
+          "file": "packages/theme/src/variables/typography/index.ts",
+          "hash": "15749593622752628120"
+        },
+        {
+          "file": "packages/theme/tsconfig.json",
+          "hash": "10248009443664204963"
+        }
+      ],
+      "@jm/esbuild-config": [
+        {
+          "file": "packages/esbuild-config/README.md",
+          "hash": "6886952344311067916"
+        },
+        {
+          "file": "packages/esbuild-config/index.js",
+          "hash": "2789728533718397977"
+        },
+        {
+          "file": "packages/esbuild-config/package.json",
+          "hash": "269219531314971243",
+          "deps": [
+            "npm:esbuild@0.16.17"
+          ]
+        }
+      ],
+      "@jm/react-components-layout": [
+        {
+          "file": "packages/react/components/layout/dist/index.cjs",
+          "hash": "16799663774890198088"
+        },
+        {
+          "file": "packages/react/components/layout/dist/index.cjs.map",
+          "hash": "10487660931855225303"
+        },
+        {
+          "file": "packages/react/components/layout/dist/index.css",
+          "hash": "4130596840047789658"
+        },
+        {
+          "file": "packages/react/components/layout/dist/index.css.map",
+          "hash": "3350185243587464393"
+        },
+        {
+          "file": "packages/react/components/layout/dist/index.js",
+          "hash": "10458349619016695070"
+        },
+        {
+          "file": "packages/react/components/layout/dist/index.js.map",
+          "hash": "2751223185557354190"
+        },
+        {
+          "file": "packages/react/components/layout/esbuild.js",
+          "hash": "10334568490550608125"
+        },
+        {
+          "file": "packages/react/components/layout/package.json",
+          "hash": "5752458937220448338",
+          "deps": [
+            "@jm/themes",
+            "npm:react",
+            "@jm/esbuild-config",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:@vanilla-extract/css",
+            "npm:@vanilla-extract/esbuild-plugin",
+            "npm:react-dom",
+            "npm:typescript"
+          ]
+        },
+        {
+          "file": "packages/react/components/layout/src/Block.css.ts",
+          "hash": "6820276000503252790"
+        },
+        {
+          "file": "packages/react/components/layout/src/Block.tsx",
+          "hash": "15160726378786960580"
+        },
+        {
+          "file": "packages/react/components/layout/src/index.ts",
+          "hash": "5425369313421556660"
+        },
+        {
+          "file": "packages/react/components/layout/tsconfig.json",
+          "hash": "11566056532330521231"
+        }
       ]
-    },
-    "nonProjectFiles": [
-      {
-        "file": ".eslintrc.js",
-        "hash": "6235190018576920766"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "2052412003981761678"
-      },
-      {
-        "file": ".yarn/install-state.gz",
-        "hash": "3819335580489788080"
-      },
-      {
-        "file": ".yarnrc.yml",
-        "hash": "625637690827025316"
-      },
-      {
-        "file": "README.md",
-        "hash": "6913391770818356503"
-      },
-      {
-        "file": "nx.json",
-        "hash": "4385397610777163596"
-      },
-      {
-        "file": "package.json",
-        "hash": "6993174859675160122"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "639052610794909976"
-      },
-      {
-        "file": "tsconfig.eslint.json",
-        "hash": "1169291880152018748"
-      },
-      {
-        "file": "yarn.lock",
-        "hash": "1029686713693774396"
-      }
-    ]
+    }
   }
 }

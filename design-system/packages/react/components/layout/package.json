@@ -18,7 +18,8 @@
     "build:js": "node esbuild.js",
     "build:ts": "tsc --emitDeclarationOnly",
     "clean": "rm -rf dist",
-    "build": "yarn clean && yarn build:js && yarn build:ts"
+    "build": "yarn clean && yarn build:js && yarn build:ts",
+    "dev": "yarn clean && yarn build:js --watch &&  yarn build:ts --watch"
   },
   "devDependencies": {
     "@jm/esbuild-config": "workspace:^",
