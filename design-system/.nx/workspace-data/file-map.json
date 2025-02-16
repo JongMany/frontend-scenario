@@ -11,72 +11,72 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".nx/workspace-data/905C954B-C6A0-59DC-A62F-2121CD42964A.db-wal",
-        "hash": "4584564735531489128"
-      },
-      {
-        "file": ".yarn/install-state.gz",
-        "hash": "4219857730239398636"
-      },
-      {
-        "file": ".nx/workspace-data/source-maps.json",
-        "hash": "2932970324902684257"
-      },
-      {
-        "file": ".nx/workspace-data/parsed-lock-file.json",
-        "hash": "14988214366844373053"
-      },
-      {
         "file": "yarn.lock",
         "hash": "402506643353546133"
-      },
-      {
-        "file": ".nx/workspace-data/project-graph.json",
-        "hash": "6645368738949248944"
-      },
-      {
-        "file": ".yarnrc.yml",
-        "hash": "625637690827025316"
-      },
-      {
-        "file": ".nx/workspace-data/lockfile.hash",
-        "hash": "8926972857555596546"
       },
       {
         "file": ".eslintrc.js",
         "hash": "6235190018576920766"
       },
       {
-        "file": "package.json",
-        "hash": "3710251419103671780"
+        "file": ".nx/workspace-data/905C954B-C6A0-59DC-A62F-2121CD42964A.db-wal",
+        "hash": "4584564735531489128"
       },
       {
-        "file": "README.md",
-        "hash": "6913391770818356503"
+        "file": ".nx/workspace-data/parsed-lock-file.json",
+        "hash": "14988214366844373053"
+      },
+      {
+        "file": ".yarnrc.yml",
+        "hash": "625637690827025316"
+      },
+      {
+        "file": "nx.json",
+        "hash": "4385397610777163596"
       },
       {
         "file": "tsconfig.eslint.json",
         "hash": "1169291880152018748"
       },
       {
-        "file": ".prettierrc",
-        "hash": "2052412003981761678"
+        "file": ".nx/workspace-data/project-graph.json",
+        "hash": "11473599217666210026"
+      },
+      {
+        "file": ".nx/workspace-data/file-map.json",
+        "hash": "15747539738373486485"
       },
       {
         "file": "tsconfig.base.json",
         "hash": "639052610794909976"
       },
       {
-        "file": ".nx/workspace-data/file-map.json",
-        "hash": "15386030265730824467"
+        "file": ".yarn/install-state.gz",
+        "hash": "4219857730239398636"
+      },
+      {
+        "file": "package.json",
+        "hash": "3710251419103671780"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "2052412003981761678"
+      },
+      {
+        "file": ".nx/workspace-data/lockfile.hash",
+        "hash": "8926972857555596546"
+      },
+      {
+        "file": "README.md",
+        "hash": "6913391770818356503"
+      },
+      {
+        "file": ".nx/workspace-data/source-maps.json",
+        "hash": "2932970324902684257"
       },
       {
         "file": ".nx/workspace-data/905C954B-C6A0-59DC-A62F-2121CD42964A.db-shm",
         "hash": "14746379895695489980"
-      },
-      {
-        "file": "nx.json",
-        "hash": "4385397610777163596"
       }
     ],
     "projectFileMap": {

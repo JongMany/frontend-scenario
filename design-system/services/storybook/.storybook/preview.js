@@ -12,6 +12,7 @@
 // };
 
 // export default preview;
+import "./style.css"
 import "@jm/themes/themes.css"
 // const isVisualTest = process.env.STORYBOOK_VISUAL_TEST === "true"; // ✅ 환경 변수 체크
 
@@ -21,8 +22,23 @@ const preview = {
     controls: {
       matchers: {
         color: /(background|color)$/i,
+        date: /Date$/i,
       },
     },
+    rootAttributesTooltip: true,
+    rootAttributes: [
+      {
+        root: "body",
+        attribute: "class",
+        defaultState: {
+          name: "light",
+          value: "theme-light",
+        },
+        states: [
+          {name: "dark", value: "theme-dark`"}
+        ]
+      },
+    ]  
   },
 };
 
