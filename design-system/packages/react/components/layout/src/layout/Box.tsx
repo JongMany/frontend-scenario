@@ -13,7 +13,7 @@ const Box = (props: BoxProps, ref: React.Ref<HTMLElement>) => {
   return React.createElement(as, {
     ...props,
     ref,
-    className: clsx(StyleSprinkles(extractSprinkleProps(props, Array.from(StyleSprinkles.properties))), props.className),    
+    className: clsx([StyleSprinkles(extractSprinkleProps(props, Array.from(StyleSprinkles.properties))), props.className]),    
     style: {
       background:vars.colors.$scale?.[background]?.[100] || background,
       color: vars.colors.$scale?.[color]?.[700] || color,

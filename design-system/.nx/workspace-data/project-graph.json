@@ -221,7 +221,7 @@
           "targetGroups": {
             "NPM Scripts": [
               "storybook",
-              "build-storybook"
+              "build"
             ]
           },
           "js": {
@@ -242,17 +242,20 @@
             "configurations": {},
             "parallelism": true
           },
-          "build-storybook": {
+          "build": {
             "executor": "nx:run-script",
             "options": {
-              "script": "build-storybook"
+              "script": "build"
             },
             "metadata": {
               "scriptContent": "storybook build",
-              "runCommand": "yarn build-storybook"
+              "runCommand": "yarn build"
             },
             "configurations": {},
-            "parallelism": true
+            "parallelism": true,
+            "dependsOn": [
+              "^build"
+            ]
           },
           "nx-release-publish": {
             "executor": "@nx/js:release-publish",
@@ -2622,6 +2625,15 @@
         "hash": "10c0/e49c7953da870e4135794874f36d75bc8c6aac8d9793e4e1690581b9094830b18314ed586beffd8d31281674c56bb8952c537bd112dd477aa734a8583841dfe2"
       }
     },
+    "npm:@storybook/addon-themes": {
+      "type": "npm",
+      "name": "npm:@storybook/addon-themes",
+      "data": {
+        "version": "8.5.6",
+        "packageName": "@storybook/addon-themes",
+        "hash": "10c0/d7181f121eb2d4270ba2460b9cc0788e3b4ee169186abc1064dea1d00069a83544d7e4e701aeefc5d80d718fb446abff6553cdda0c6f7d962450976eb7918cd1"
+      }
+    },
     "npm:@storybook/addon-toolbars": {
       "type": "npm",
       "name": "npm:@storybook/addon-toolbars",
@@ -2863,6 +2875,15 @@
         "version": "0.9.0",
         "packageName": "@tybys/wasm-util",
         "hash": "10c0/f9fde5c554455019f33af6c8215f1a1435028803dc2a2825b077d812bed4209a1a64444a4ca0ce2ea7e1175c8d88e2f9173a36a33c199e8a5c671aa31de8242d"
+      }
+    },
+    "npm:@types/add": {
+      "type": "npm",
+      "name": "npm:@types/add",
+      "data": {
+        "version": "2.0.3",
+        "packageName": "@types/add",
+        "hash": "10c0/d18841b43d3799f69db0bdae380d19d05f43b716315c5bfd4d6c1b3467bada2644eab8c04bb5afdb94bba87604da06d466f22fe30df6bcf0518c373593bb474a"
       }
     },
     "npm:@types/aria-query": {
@@ -3333,6 +3354,24 @@
         "hash": "10c0/f1c4d9f32f509f664b2d073ea114ff0a83f154bd3cdae429cade64ad1ca0fdc1ba745f2811496cc6a6f8e5513a9a0fa3798ffc41e6ff8868aa7f06c825f615ef"
       }
     },
+    "npm:@vanilla-extract/recipes": {
+      "type": "npm",
+      "name": "npm:@vanilla-extract/recipes",
+      "data": {
+        "version": "0.5.5",
+        "packageName": "@vanilla-extract/recipes",
+        "hash": "10c0/5e032bc3f7873b1deb39fc64e2ab6871ac3d70dd527309b4e08310def142180fd346df48ca33306ac0ea7626673856e3995fab03f56f54a967c48a3e5e4545d3"
+      }
+    },
+    "npm:@vanilla-extract/sprinkles": {
+      "type": "npm",
+      "name": "npm:@vanilla-extract/sprinkles",
+      "data": {
+        "version": "1.6.3",
+        "packageName": "@vanilla-extract/sprinkles",
+        "hash": "10c0/17e03af9d090aa175bdeae646ae4a5bf1da37b7e473caa4ab92efbbd7678e53137e10281a0669f50ab5bd985a59e621da2bfc3e0cc28bded32becd72b8cfaf13"
+      }
+    },
     "npm:@vitejs/plugin-react": {
       "type": "npm",
       "name": "npm:@vitejs/plugin-react",
@@ -3520,6 +3559,15 @@
         "version": "8.14.0",
         "packageName": "acorn",
         "hash": "10c0/6d4ee461a7734b2f48836ee0fbb752903606e576cc100eb49340295129ca0b452f3ba91ddd4424a1d4406a98adfb2ebb6bd0ff4c49d7a0930c10e462719bbfd7"
+      }
+    },
+    "npm:add": {
+      "type": "npm",
+      "name": "npm:add",
+      "data": {
+        "version": "2.0.6",
+        "packageName": "add",
+        "hash": "10c0/6b21d5f2e58cf5e15d56cc6f9ebce04f04f4c33ae25f09d600ddacf8df00036ba521f17feb1b3f81307b7c6d2ef0bed8b511a0f86f062eb90c2f909b48b588ae"
       }
     },
     "npm:agent-base": {
@@ -4087,6 +4135,15 @@
         "version": "1.0.4",
         "packageName": "clone",
         "hash": "10c0/2176952b3649293473999a95d7bebfc9dc96410f6cbd3d2595cf12fd401f63a4bf41a7adbfd3ab2ff09ed60cb9870c58c6acdd18b87767366fabfc163700f13b"
+      }
+    },
+    "npm:clsx": {
+      "type": "npm",
+      "name": "npm:clsx",
+      "data": {
+        "version": "2.1.1",
+        "packageName": "clsx",
+        "hash": "10c0/c4c8eb865f8c82baab07e71bfa8897c73454881c4f99d6bc81585aecd7c441746c1399d08363dc096c550cceaf97bd4ce1e8854e1771e9998d9f94c4fe075839"
       }
     },
     "npm:color-convert": {
@@ -8688,6 +8745,15 @@
         "hash": "10c0/ccd7e723e61ad5965fffbb791366db689572b80cca80e0f96aad968dfff4156cd7cd1ad18607afe1046d8241e6fb2d6c08bf7fa7bfb5eaec818735d8feac8f05"
       }
     },
+    "npm:yarn": {
+      "type": "npm",
+      "name": "npm:yarn",
+      "data": {
+        "version": "1.22.22",
+        "packageName": "yarn",
+        "hash": "10c0/8c77198c93d7542e7f4e131c63b66de357b7076ecfbcfe709ec0d674115c2dd9edaa45196e5510e6e9366d368707a802579e3402071002e1c9d9a99d491478de"
+      }
+    },
     "npm:yocto-queue": {
       "type": "npm",
       "name": "npm:yocto-queue",
@@ -8726,6 +8792,11 @@
       },
       {
         "source": "@jm/react-components-layout",
+        "target": "npm:@types/add",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-layout",
         "target": "npm:@types/react",
         "type": "static"
       },
@@ -8746,12 +8817,37 @@
       },
       {
         "source": "@jm/react-components-layout",
+        "target": "npm:@vanilla-extract/recipes",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-layout",
+        "target": "npm:@vanilla-extract/sprinkles",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-layout",
+        "target": "npm:add",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-layout",
         "target": "npm:react-dom",
         "type": "static"
       },
       {
         "source": "@jm/react-components-layout",
         "target": "npm:typescript",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-layout",
+        "target": "npm:yarn",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-layout",
+        "target": "npm:clsx",
         "type": "static"
       }
     ],
@@ -8809,7 +8905,17 @@
       },
       {
         "source": "@jm/storybook",
+        "target": "npm:@storybook/addon-themes",
+        "type": "static"
+      },
+      {
+        "source": "@jm/storybook",
         "target": "npm:@storybook/blocks",
+        "type": "static"
+      },
+      {
+        "source": "@jm/storybook",
+        "target": "npm:@storybook/manager-api",
         "type": "static"
       },
       {
@@ -8825,6 +8931,11 @@
       {
         "source": "@jm/storybook",
         "target": "npm:@storybook/test",
+        "type": "static"
+      },
+      {
+        "source": "@jm/storybook",
+        "target": "npm:@storybook/theming",
         "type": "static"
       },
       {
@@ -8845,6 +8956,11 @@
       {
         "source": "@jm/storybook",
         "target": "npm:@testing-library/user-event",
+        "type": "static"
+      },
+      {
+        "source": "@jm/storybook",
+        "target": "npm:@vanilla-extract/sprinkles",
         "type": "static"
       },
       {
@@ -8895,6 +9011,11 @@
       {
         "source": "@jm/storybook",
         "target": "npm:vitest",
+        "type": "static"
+      },
+      {
+        "source": "@jm/storybook",
+        "target": "npm:clsx",
         "type": "static"
       },
       {
@@ -10106,6 +10227,13 @@
       },
       {
         "source": "npm:@storybook/addon-outline",
+        "target": "npm:ts-dedent",
+        "type": "static"
+      }
+    ],
+    "npm:@storybook/addon-themes": [
+      {
+        "source": "npm:@storybook/addon-themes",
         "target": "npm:ts-dedent",
         "type": "static"
       }
@@ -18192,5 +18320,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1739681023011
+  "computedAt": 1739708616876
 }

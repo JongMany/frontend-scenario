@@ -1,6 +1,5 @@
 import "@jm/react-components-layout/style.css"
 import {Box as _Box} from "@jm/react-components-layout"
-import { background } from "@storybook/theming"
 
 export default {
   title: "React Components/Layout/Box",
