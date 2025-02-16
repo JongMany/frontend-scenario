@@ -22,8 +22,8 @@ const GridItem = (props: GridItemProps, ref: React.Ref<HTMLElement>) => {
       gridRowEnd: rowEnd,
       gridRowSpan: rowSpan,
       gridRowStart: rowStart,      
-      background:vars.colors.$scale?.[background]?.[100] || background,
-      color: vars.colors.$scale?.[color]?.[700] || color,
+      background: background && vars.colors.$scale?.[background]?.[100],
+      color: color && vars.colors.$scale?.[color]?.[700],
       ...props.style
     }
   }, children);

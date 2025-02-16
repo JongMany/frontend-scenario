@@ -92,3 +92,7 @@ https://usage.tistory.com/172
 ### 스토리북 설치
 
 yarn workspace @jm/storybook dlx storybook init --type react
+
+### 확장성을 고려하는 경우
+확장성을 고려할 경우 CSS-in-js로 동적인 스타일링이 가능하도록 하는 것이 좋음
+classname이 런타임 이전에 만들어지는 zero-runtime은 확장성이 css-in-js보다는 떨어짐

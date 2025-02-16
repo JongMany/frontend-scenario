@@ -27,8 +27,8 @@ const Grid = (props: GridProps, ref: React.Ref<HTMLElement>) => {
       gridTemplateAreas: templateAreas,
       gridTemplateColumns: templateColumns,
       gridTemplateRows: templateRows,     
-      background:vars.colors.$scale?.[background]?.[100] || background,
-      color: vars.colors.$scale?.[color]?.[700] || color,
+      background: background && vars.colors.$scale?.[background]?.[100],
+      color: color && vars.colors.$scale?.[color]?.[700],
       ...props.style
     }
   }, children);

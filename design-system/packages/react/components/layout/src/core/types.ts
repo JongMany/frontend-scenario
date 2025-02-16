@@ -15,8 +15,10 @@ export type AsElementProps = AsProps & ElementProps;
 
 // "color" Props 대응 (일단 색상이 많아 vanilla extract로 관리 X)
 export type ColorProps = {
-  color: keyof typeof vars.colors.$scale & string;
-  background:keyof typeof vars.colors.$scale & string;
+  // color?: keyof typeof vars.colors.$scale | string;
+  color?: keyof typeof vars.colors.$scale;
+  // background?:keyof typeof vars.colors.$scale | string;
+  background?:keyof typeof vars.colors.$scale;
 }
 
 // "dynamic style" 대응
