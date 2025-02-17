@@ -33,6 +33,7 @@
     "react": "*"
   },
   "dependencies": {
+    "@jm/react-hooks-toggle": "workspace:^",
     "clsx": "^2.1.1"
   }
 }
