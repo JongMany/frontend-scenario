@@ -96,3 +96,14 @@ yarn workspace @jm/storybook dlx storybook init --type react
 ### 확장성을 고려하는 경우
 확장성을 고려할 경우 CSS-in-js로 동적인 스타일링이 가능하도록 하는 것이 좋음
 classname이 런타임 이전에 만들어지는 zero-runtime은 확장성이 css-in-js보다는 떨어짐
+
+### Headless
+장점
+- 관심사 분리: UI와 기능이 분리되어 각각 나누어 고민하고 개발하게 되어 코드 품질 향상
+- 유지보수 용이성: 인터페이스 또는 기능이 변경될 경우 일괄로 반영할 수 있음
+- 재사용성: 다양한 곳에서 사용할 수 있게 된다.
+
+구현방식
+- Hooks
+- Compound: 복잡도가 높은 컴포넌트 사용
+- Function as Child: AB Test 또는 Role Based UI처럼 분기를 쳐야하는 경우
