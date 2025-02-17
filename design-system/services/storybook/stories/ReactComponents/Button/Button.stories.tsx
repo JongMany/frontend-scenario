@@ -1,7 +1,9 @@
-// import React from "react";
+import React from "react";
 import "@jm/react-components-button/style.css";
 import { Button as _Button } from "@jm/react-components-button";
+import { useButton } from "@jm/react-hooks-button";
 import { vars } from "@jm/themes";
+import { Text } from "@jm/react-components-layout";
 
 export default {
   title: "React Components/Button",
@@ -36,3 +38,16 @@ export const ButtonStory = {
     leftIcon: "😀",
   },
 };
+
+export const TextButtonStory = {
+  render: () => {
+    const { buttonProps } = useButton({
+      elementType: 'div',
+      onClick: () => {
+        alert("ttt")
+      },
+    });
+
+    return <Text {...buttonProps} as="div" fontSize="md" color="green" style={{userSelect: "none", cursor: "pointer"}}>텍스트 버튼입니다.</Text>
+  }
+}

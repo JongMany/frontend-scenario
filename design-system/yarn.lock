@@ -1531,6 +1531,7 @@ __metadata:
   dependencies:
     "@chromatic-com/storybook": "npm:^3"
     "@jm/react-components-layout": "workspace:^"
+    "@jm/react-hooks-button": "workspace:^"
     "@jm/themes": "workspace:^"
     "@storybook/addon-a11y": "npm:^8.5.6"
     "@storybook/addon-essentials": "npm:^8.5.6"
