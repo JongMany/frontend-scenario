@@ -1461,6 +1461,7 @@ __metadata:
   resolution: "@jm/react-components-button@workspace:packages/react/components/button"
   dependencies:
     "@jm/esbuild-config": "workspace:^"
+    "@jm/react-hooks-button": "workspace:^"
     "@jm/themes": "workspace:^"
     "@types/add": "npm:^2"
     "@types/react": "npm:^19.0.8"
@@ -1501,6 +1502,23 @@ __metadata:
     react-dom: "npm:^19.0.0"
     typescript: "npm:^5.7.3"
     yarn: "npm:^1.22.22"
+  peerDependencies:
+    "@jm/themes": "workspace:^"
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
+"@jm/react-hooks-button@workspace:^, @jm/react-hooks-button@workspace:packages/react/hooks/button":
+  version: 0.0.0-use.local
+  resolution: "@jm/react-hooks-button@workspace:packages/react/hooks/button"
+  dependencies:
+    "@jm/esbuild-config": "workspace:^"
+    "@types/react": "npm:^19.0.8"
+    "@types/react-dom": "npm:^19.0.3"
+    clsx: "npm:^2.1.1"
+    react: "npm:^19.0.0"
+    react-dom: "npm:^19.0.0"
+    typescript: "npm:^5.7.3"
   peerDependencies:
     "@jm/themes": "workspace:^"
     react: "*"

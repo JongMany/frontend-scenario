@@ -43,6 +43,7 @@
     "react": "*"
   },
   "dependencies": {
+    "@jm/react-hooks-button": "workspace:^",
     "clsx": "^2.1.1"
   }
 }

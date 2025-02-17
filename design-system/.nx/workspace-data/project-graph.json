@@ -276,6 +276,143 @@
         "implicitDependencies": []
       }
     },
+    "@jm/react-hooks-button": {
+      "name": "@jm/react-hooks-button",
+      "type": "lib",
+      "data": {
+        "root": "packages/react/hooks/button",
+        "sourceRoot": "packages/react/hooks/button",
+        "name": "@jm/react-hooks-button",
+        "projectType": "library",
+        "tags": [
+          "npm:public"
+        ],
+        "metadata": {
+          "targetGroups": {
+            "NPM Scripts": [
+              "build:cjs",
+              "build:esm",
+              "build:js",
+              "build:ts",
+              "clean",
+              "build",
+              "dev"
+            ]
+          },
+          "js": {
+            "packageName": "@jm/react-hooks-button",
+            "packageExports": {
+              ".": {
+                "types": "./dist/index.d.ts",
+                "import": "./dist/index.js",
+                "require": "./dist/index.cjs"
+              }
+            },
+            "packageMain": "dist/index.js",
+            "isInPackageManagerWorkspaces": true
+          }
+        },
+        "targets": {
+          "build:cjs": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:cjs"
+            },
+            "metadata": {
+              "scriptContent": "esbuild src/index.js --format=cjs --minify --bundle --outfile=dist/index.js",
+              "runCommand": "yarn build:cjs"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "build:esm": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:esm"
+            },
+            "metadata": {
+              "scriptContent": "esbuild src/index.js --format=esm --minify --bundle --outfile=dist/index.js",
+              "runCommand": "yarn build:esm"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "build:js": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:js"
+            },
+            "metadata": {
+              "scriptContent": "node esbuild.js",
+              "runCommand": "yarn build:js"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "build:ts": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:ts"
+            },
+            "metadata": {
+              "scriptContent": "tsc --emitDeclarationOnly",
+              "runCommand": "yarn build:ts"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "clean": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "clean"
+            },
+            "metadata": {
+              "scriptContent": "rm -rf dist",
+              "runCommand": "yarn clean"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "build": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build"
+            },
+            "metadata": {
+              "scriptContent": "yarn clean && yarn build:js && yarn build:ts",
+              "runCommand": "yarn build"
+            },
+            "configurations": {},
+            "parallelism": true,
+            "dependsOn": [
+              "^build"
+            ]
+          },
+          "dev": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "dev"
+            },
+            "metadata": {
+              "scriptContent": "yarn clean && yarn build:js --watch &&  yarn build:ts --watch",
+              "runCommand": "yarn dev"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "nx-release-publish": {
+            "executor": "@nx/js:release-publish",
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "options": {},
+            "configurations": {},
+            "parallelism": true
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
     "@jm/esbuild-config": {
       "name": "@jm/esbuild-config",
       "type": "lib",
@@ -9076,6 +9213,48 @@
       },
       {
         "source": "@jm/react-components-layout",
+        "target": "npm:clsx",
+        "type": "static"
+      }
+    ],
+    "@jm/react-hooks-button": [
+      {
+        "source": "@jm/react-hooks-button",
+        "target": "@jm/themes",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-hooks-button",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-hooks-button",
+        "target": "@jm/esbuild-config",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-hooks-button",
+        "target": "npm:@types/react",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-hooks-button",
+        "target": "npm:@types/react-dom",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-hooks-button",
+        "target": "npm:react-dom",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-hooks-button",
+        "target": "npm:typescript",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-hooks-button",
         "target": "npm:clsx",
         "type": "static"
       }
@@ -18556,5 +18735,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1739793031381
+  "computedAt": 1739832239774
 }
