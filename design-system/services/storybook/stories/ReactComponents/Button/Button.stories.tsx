@@ -1,3 +1,4 @@
+// import React from "react";
 import "@jm/react-components-button/style.css";
 import { Button as _Button } from "@jm/react-components-button";
 import { vars } from "@jm/themes";
@@ -31,7 +32,7 @@ export const ButtonStory = {
     children: "Button",
     variant: "outline",
     isDisabled: false,
-    isLoading: false,
+    isLoading: true,
     leftIcon: "😀",
   },
 };

@@ -7,6 +7,8 @@ import {
   buttonStyle,
   enableColorVariant,
   hoverColorVariant,
+  spanStyle,
+  spinnerStyle,
 } from "./style.css";
 import { vars } from "@jm/themes";
 
@@ -15,7 +17,12 @@ const Button = (props: ButtonProps, ref: React.Ref<HTMLButtonElement>) => {
     variant = "solid",
     size = "md",
     color = "gray",
+    leftIcon,
+    rightIcon,
     children,
+    isLoading,
+    isDisabled,
+    onKeyDown,
     style,
   } = props;
 
@@ -29,6 +36,17 @@ const Button = (props: ButtonProps, ref: React.Ref<HTMLButtonElement>) => {
       ? vars.colors.$scale[color][700]
       : vars.colors.$scale[color][100];
 
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>) => {
+    onKeyDown?.(event);
+
+    if( event.key === "Enter" || event.key === '13') {
+      event.preventDefault();
+      event.currentTarget.click();
+    }
+  }
+
+  const disabled = isDisabled || isLoading;
+
   return (
     <button
       ref={ref}
@@ -38,6 +56,9 @@ const Button = (props: ButtonProps, ref: React.Ref<HTMLButtonElement>) => {
           variant,
         }),
       ])}
+      onKeyDown={handleKeyDown}
+      role="button"
+      data-loading={isLoading}
       style={{
         ...assignInlineVars({
           [enableColorVariant]: enableColor,
@@ -47,7 +68,10 @@ const Button = (props: ButtonProps, ref: React.Ref<HTMLButtonElement>) => {
         ...style,
       }}
     >
+      {isLoading && <div className={spinnerStyle({size})}></div>}
+      {leftIcon && <span className={spanStyle({size})}>{leftIcon}</span>}
       <span>{children}</span>
+      {rightIcon && <span className={spanStyle({size})}>{rightIcon}</span>}
     </button>
   );
 };
