@@ -12,7 +12,7 @@
     "graph": "nx run-many --target=build --graph",
     "dev:all": "yarn dev:packages & yarn dev:storybook",
     "dev:storybook": "nx storybook @jm/storybook",
-    "dev:packages": "nx run-many --target=dev --projects='@jm/react-components-*'"
+    "dev:packages": "nx run-many --target=dev --projects='@jm/react-components-*, @jm/react-hooks-*'"
   },
   "packageManager": "yarn@4.6.0",
   "devDependencies": {

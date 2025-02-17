@@ -1513,6 +1513,7 @@ __metadata:
   resolution: "@jm/react-hooks-button@workspace:packages/react/hooks/button"
   dependencies:
     "@jm/esbuild-config": "workspace:^"
+    "@jm/react-hooks-toggle": "workspace:^"
     "@types/react": "npm:^19.0.8"
     "@types/react-dom": "npm:^19.0.3"
     clsx: "npm:^2.1.1"
@@ -1525,7 +1526,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@jm/react-hooks-toggle@workspace:packages/react/hooks/toggle":
+"@jm/react-hooks-toggle@workspace:^, @jm/react-hooks-toggle@workspace:packages/react/hooks/toggle":
   version: 0.0.0-use.local
   resolution: "@jm/react-hooks-toggle@workspace:packages/react/hooks/toggle"
   dependencies:
