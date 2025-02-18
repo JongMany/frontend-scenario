@@ -11,7 +11,7 @@ const Accordion = (props: AccordionProps, ref: React.Ref<HTMLDivElement>) => {
   const [activeItems, setActiveItems] = useState<string[]>(defaultActiveItems);
 
   const handleSetActiveItem = (item: string) => {
-    if (activeItems.indexOf(item)) {
+    if (activeItems.includes(item)) {
       setActiveItems(activeItems.filter(activeItem => activeItem !== item));
     } else {
       setActiveItems([...activeItems, item]);

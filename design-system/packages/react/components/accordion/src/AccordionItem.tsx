@@ -7,9 +7,9 @@ const AccordionItem = (props: AccordionItemProps, ref: React.Ref<HTMLDivElement>
   const { itemName, children, className, ...rest} = props;
 
   const childrenWithProps = React.Children.toArray(children);
-
   const accordionItemChildren = childrenWithProps.map((child) => {
-    if(React.isValidElement(child)) {
+    
+    if(React.isValidElement(child) && typeof child.type !== "string") {
       return React.cloneElement(child, {
         ...(child.props as any),
         itemName
