@@ -1,5 +1,7 @@
 export type {
-  AccordionProps
-} from "./types"
+  AccordionProps,
+  AccordionItemProps
+} from "./types";
 
-export {Accordion} from "./Accordion"
+export {Accordion} from "./Accordion";
+export {AccordionItem} from "./AccordionItem";
