@@ -8,4 +8,12 @@ export type AccordionProps = {
 export type AccordionItemProps = {
   children: React.ReactNode[];
   itemName: string;
-} & Omit<React.HTMLAttributes<HTMLDivElement>, "children">
+} & Omit<React.HTMLAttributes<HTMLDivElement>, "children">;
+
+export type AccordionButtonProps = {
+  itemName?: string;
+} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+
+export type AccordionPanelProps = {
+  itemName: string;
+} & React.HTMLAttributes<HTMLDivElement>;
