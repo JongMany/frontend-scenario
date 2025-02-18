@@ -3,6 +3,7 @@
   "packageManager": "yarn@4.6.0",
   "devDependencies": {
     "@chromatic-com/storybook": "^3",
+    "@jm/react-components-accordion": "workspace:^",
     "@jm/react-components-layout": "workspace:^",
     "@jm/react-hooks-button": "workspace:^",
     "@jm/themes": "workspace:^",

@@ -1456,7 +1456,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@jm/react-components-accordion@workspace:packages/react/components/accordion":
+"@jm/react-components-accordion@workspace:^, @jm/react-components-accordion@workspace:packages/react/components/accordion":
   version: 0.0.0-use.local
   resolution: "@jm/react-components-accordion@workspace:packages/react/components/accordion"
   dependencies:
@@ -1575,6 +1575,7 @@ __metadata:
   resolution: "@jm/storybook@workspace:services/storybook"
   dependencies:
     "@chromatic-com/storybook": "npm:^3"
+    "@jm/react-components-accordion": "workspace:^"
     "@jm/react-components-layout": "workspace:^"
     "@jm/react-hooks-button": "workspace:^"
     "@jm/themes": "workspace:^"
