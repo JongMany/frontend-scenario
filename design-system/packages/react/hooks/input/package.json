@@ -1,0 +1,39 @@
+{
+  "name": "@jm/react-hooks-input",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build:cjs": "esbuild src/index.js --format=cjs --minify --bundle --outfile=dist/index.js",
+    "build:esm": "esbuild src/index.js --format=esm --minify --bundle --outfile=dist/index.js",
+    "build:js": "node esbuild.js",
+    "build:ts": "tsc --emitDeclarationOnly",
+    "clean": "rm -rf dist",
+    "build": "yarn clean && yarn build:js && yarn build:ts",
+    "dev": "yarn clean && yarn build:js --watch &&  yarn build:ts --watch"
+  },
+  "devDependencies": {
+    "@jm/esbuild-config": "workspace:^",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "@jm/themes": "workspace:^",
+    "react": "*"
+  },
+  "dependencies": {
+    "@jm/react-hooks-toggle": "workspace:^",
+    "clsx": "^2.1.1"
+  }
+}

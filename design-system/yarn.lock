@@ -1553,6 +1553,24 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@jm/react-hooks-input@workspace:packages/react/hooks/input":
+  version: 0.0.0-use.local
+  resolution: "@jm/react-hooks-input@workspace:packages/react/hooks/input"
+  dependencies:
+    "@jm/esbuild-config": "workspace:^"
+    "@jm/react-hooks-toggle": "workspace:^"
+    "@types/react": "npm:^19.0.8"
+    "@types/react-dom": "npm:^19.0.3"
+    clsx: "npm:^2.1.1"
+    react: "npm:^19.0.0"
+    react-dom: "npm:^19.0.0"
+    typescript: "npm:^5.7.3"
+  peerDependencies:
+    "@jm/themes": "workspace:^"
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
 "@jm/react-hooks-toggle@workspace:^, @jm/react-hooks-toggle@workspace:packages/react/hooks/toggle":
   version: 0.0.0-use.local
   resolution: "@jm/react-hooks-toggle@workspace:packages/react/hooks/toggle"
