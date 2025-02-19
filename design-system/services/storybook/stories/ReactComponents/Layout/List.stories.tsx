@@ -1,4 +1,4 @@
-import "@fastcampus/react-components-layout/style.css";
+import "@jm/react-components-layout/style.css";
 import React from "react";
 import {
   OrderedList,
