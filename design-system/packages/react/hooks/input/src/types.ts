@@ -5,14 +5,16 @@ export type UseInputProps = {
   isReadOnly?: boolean;
   isRequired?: boolean;
   isInvalid?: boolean;
-} & Omit<ComponentPropsWithoutRef<"input">, "disabled" | "readOnly">;
+  formAction?: string | undefined;
+} & Omit<ComponentPropsWithoutRef<"input">, "disabled" | "readOnly" | "formAction"| "children">;
 
 export type UseInputResult = {
-  inputProps: ComponentPropsWithoutRef<"input"> & {
+  inputProps: Omit<ComponentPropsWithoutRef<"input">, "children"> & {
     "data-disabled": boolean;
     "data-invalid": boolean;
     "aria-invalid": boolean;
     "aria-required": boolean;
+    formAction?: string | undefined;
   };
   valueCount: number;
 };

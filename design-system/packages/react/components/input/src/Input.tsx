@@ -20,7 +20,7 @@ const Input = (props: InputProps, ref: React.Ref<HTMLInputElement>) => {
   } = props;
 
   const { inputProps } = useInput(rest);
-
+  
   return (
     <input
       {...inputProps}

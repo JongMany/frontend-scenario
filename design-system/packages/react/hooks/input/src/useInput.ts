@@ -12,6 +12,8 @@ export const useInput = (props: UseInputProps): UseInputResult => {
     onChange,
     ...rest
   } = props;
+  
+  const {  ...safeRest } = rest;
 
   const isCountrolled = value !== undefined && onChange !== undefined;
   const [uncontrolledValue, setUncontrolledValue] = useState(defaultValue ?? '');
@@ -23,12 +25,12 @@ export const useInput = (props: UseInputProps): UseInputResult => {
       setUncontrolledValue(event.target.value);
     }
   };
-
+  
   const currentValue = isCountrolled ? value : uncontrolledValue;
 
   return {
     inputProps: {
-      ...rest,
+      ...safeRest,
       defaultValue,
       value: currentValue,
       onChange: handleChange,

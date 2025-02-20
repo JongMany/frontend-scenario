@@ -12,15 +12,17 @@
     "./style.css": "./dist/index.css"
   },
   "scripts": {
-    "build": "yarn clean && yarn build:js && yarn build:type && yarn build:css",
-    "build:js": "node build.js",
-    "build:type": "yarn tsc --emitDeclarationOnly",
+    "build:cjs": "esbuild src/index.js --format=cjs --minify --bundle --outfile=dist/index.js",
+    "build:esm": "esbuild src/index.js --format=esm --minify --bundle --outfile=dist/index.js",
+    "build:js": "node esbuild.js",
+    "build:ts": "tsc --emitDeclarationOnly",
     "clean": "rm -rf dist",
-    "dev": "yarn build:js --watch && yarn build:type --watch"
+    "build": "yarn clean && yarn build:js && yarn build:ts",
+    "dev": "yarn clean && yarn build:js --watch &&  yarn build:ts --watch"
   },
   "devDependencies": {
-    "@fastcampus/esbuild-config": "workspace:^",
-    "@fastcampus/themes": "workspace:^",
+    "@jm/esbuild-config": "workspace:^",
+    "@jm/themes": "workspace:^",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "@vanilla-extract/css": "^1.13.0",
@@ -35,11 +37,11 @@
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
-    "@fastcampus/themes": "workspace:^",
+    "@jm/themes": "workspace:^",
     "react": "*"
   },
   "dependencies": {
-    "@fastcampus/react-hooks-input": "workspace:^",
+    "@jm/react-hooks-input": "workspace:^",
     "clsx": "^2.0.0"
   }
 }
