@@ -5,6 +5,7 @@
     "@chromatic-com/storybook": "^3",
     "@jm/react-components-accordion": "workspace:^",
     "@jm/react-components-layout": "workspace:^",
+    "@jm/react-components-select": "workspace:^",
     "@jm/react-hooks-button": "workspace:^",
     "@jm/themes": "workspace:^",
     "@storybook/addon-a11y": "^8.5.6",

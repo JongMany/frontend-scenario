@@ -1561,7 +1561,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@jm/react-components-select@workspace:packages/react/components/select":
+"@jm/react-components-select@workspace:^, @jm/react-components-select@workspace:packages/react/components/select":
   version: 0.0.0-use.local
   resolution: "@jm/react-components-select@workspace:packages/react/components/select"
   dependencies:
@@ -1667,6 +1667,7 @@ __metadata:
     "@chromatic-com/storybook": "npm:^3"
     "@jm/react-components-accordion": "workspace:^"
     "@jm/react-components-layout": "workspace:^"
+    "@jm/react-components-select": "workspace:^"
     "@jm/react-hooks-button": "workspace:^"
     "@jm/themes": "workspace:^"
     "@storybook/addon-a11y": "npm:^8.5.6"

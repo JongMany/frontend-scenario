@@ -2556,6 +2556,15 @@
         "hash": "10c0/b1b863ac34a2c2172fbe0807a1ec4d5cb684e48d422d15ec95980b81475fac4fdb3768a8b13eef39130203a7c04340fc167bae057c7ebcafd7dec9fe6c36aeb1"
       }
     },
+    "npm:@types/prop-types": {
+      "type": "npm",
+      "name": "npm:@types/prop-types",
+      "data": {
+        "version": "15.7.14",
+        "packageName": "@types/prop-types",
+        "hash": "10c0/1ec775160bfab90b67a782d735952158c7e702ca4502968aa82565bd8e452c2de8601c8dfe349733073c31179116cf7340710160d3836aa8a1ef76d1532893b1"
+      }
+    },
     "npm:@types/react-dom@18.3.5": {
       "type": "npm",
       "name": "npm:@types/react-dom@18.3.5",
@@ -2572,6 +2581,15 @@
         "version": "19.0.3",
         "packageName": "@types/react-dom",
         "hash": "10c0/3867427b333cbe8cbba496d7cc20ec9676d32c25ae44f4d1263a4129d42e57cf4adf0039ad263432f1215b88075c27d326e7eb4ed646128235d01a76e661d48f"
+      }
+    },
+    "npm:@types/react@18.3.18": {
+      "type": "npm",
+      "name": "npm:@types/react@18.3.18",
+      "data": {
+        "version": "18.3.18",
+        "packageName": "@types/react",
+        "hash": "10c0/8fb2b00672072135d0858dc9db07873ea107cc238b6228aaa2a9afd1ef7a64a7074078250db38afbeb19064be8ea6af5eac32d404efdd5f45e093cc4829d87f8"
       }
     },
     "npm:@types/react": {
@@ -3330,6 +3348,15 @@
         "hash": "10c0/d73e2ddf20c4eb9337e1b3df1a0f6159481050a5de457c55b14ea2e5cb6d90bb69e004c9af54737a5ee0917fcf2c9e25de67777bbe58261847846066ba75bc9d"
       }
     },
+    "npm:autoprefixer": {
+      "type": "npm",
+      "name": "npm:autoprefixer",
+      "data": {
+        "version": "10.4.20",
+        "packageName": "autoprefixer",
+        "hash": "10c0/e1f00978a26e7c5b54ab12036d8c13833fad7222828fc90914771b1263f51b28c7ddb5803049de4e77696cbd02bb25cfc3634e80533025bb26c26aacdf938940"
+      }
+    },
     "npm:available-typed-arrays": {
       "type": "npm",
       "name": "npm:available-typed-arrays",
@@ -3517,6 +3544,15 @@
         "version": "3.1.0",
         "packageName": "callsites",
         "hash": "10c0/fff92277400eb06c3079f9e74f3af120db9f8ea03bad0e84d9aede54bbe2d44a56cccb5f6cf12211f93f52306df87077ecec5b712794c5a9b5dac6d615a3f301"
+      }
+    },
+    "npm:caniuse-lite@1.0.30001700": {
+      "type": "npm",
+      "name": "npm:caniuse-lite@1.0.30001700",
+      "data": {
+        "version": "1.0.30001700",
+        "packageName": "caniuse-lite",
+        "hash": "10c0/3d391bcdd193208166d3ad759de240b9c18ac3759dbd57195770f0fcd2eedcd47d5e853609aba1eee5a2def44b0a14eee457796bdb3451a27de0c8b27355017c"
       }
     },
     "npm:caniuse-lite": {
@@ -4786,6 +4822,15 @@
         "version": "4.0.1",
         "packageName": "form-data",
         "hash": "10c0/bb102d570be8592c23f4ea72d7df9daa50c7792eb0cf1c5d7e506c1706e7426a4e4ae48a35b109e91c85f1c0ec63774a21ae252b66f4eb981cb8efef7d0463c8"
+      }
+    },
+    "npm:fraction.js": {
+      "type": "npm",
+      "name": "npm:fraction.js",
+      "data": {
+        "version": "4.3.7",
+        "packageName": "fraction.js",
+        "hash": "10c0/df291391beea9ab4c263487ffd9d17fed162dbb736982dee1379b2a8cc94e4e24e46ed508c6d278aded9080ba51872f1bc5f3a5fd8d7c74e5f105b508ac28711"
       }
     },
     "npm:front-matter": {
@@ -6273,6 +6318,15 @@
         "hash": "10c0/62e9ea70c7a3eb91d162d2c706b6606c041e4e7b547cbbb48f8b3695af457dd6479904d7ace600856bf923dd8d1ed0696f06195c8c20f02ac87c1da0e1d315ef"
       }
     },
+    "npm:normalize-range": {
+      "type": "npm",
+      "name": "npm:normalize-range",
+      "data": {
+        "version": "0.1.2",
+        "packageName": "normalize-range",
+        "hash": "10c0/bf39b73a63e0a42ad1a48c2bd1bda5a07ede64a7e2567307a407674e595bcff0fa0d57e8e5f1e7fa5e91000797c7615e13613227aaaa4d6d6e87f5bd5cc95de6"
+      }
+    },
     "npm:npm-run-path": {
       "type": "npm",
       "name": "npm:npm-run-path",
@@ -6642,13 +6696,31 @@
         "hash": "10c0/c810983414142071da1d644662ce4caebce890203eb2bc7bf119f37f3fe5796226e117e6cca146b521921fa6531072674174a3325066ac66fce089a53e1e5196"
       }
     },
-    "npm:postcss": {
+    "npm:postcss-value-parser": {
       "type": "npm",
-      "name": "npm:postcss",
+      "name": "npm:postcss-value-parser",
+      "data": {
+        "version": "4.2.0",
+        "packageName": "postcss-value-parser",
+        "hash": "10c0/f4142a4f56565f77c1831168e04e3effd9ffcc5aebaf0f538eee4b2d465adfd4b85a44257bb48418202a63806a7da7fe9f56c330aebb3cac898e46b4cbf49161"
+      }
+    },
+    "npm:postcss@8.5.2": {
+      "type": "npm",
+      "name": "npm:postcss@8.5.2",
       "data": {
         "version": "8.5.2",
         "packageName": "postcss",
         "hash": "10c0/3044d49bc725029ab62292e8bf9849741251b95f3b754e191bf8b4025414d40ec3b4ac05c5a563d4b50060b5c8e96683eb4d783d8d8fa3867eb7b763cbe66127"
+      }
+    },
+    "npm:postcss": {
+      "type": "npm",
+      "name": "npm:postcss",
+      "data": {
+        "version": "8.5.3",
+        "packageName": "postcss",
+        "hash": "10c0/b75510d7b28c3ab728c8733dd01538314a18c52af426f199a3c9177e63eb08602a3938bfb66b62dc01350b9aed62087eabbf229af97a1659eb8d3513cec823b3"
       }
     },
     "npm:prelude-ls": {
@@ -10338,6 +10410,16 @@
       "type": "static"
     },
     {
+      "source": "npm:@types/react@18.3.18",
+      "target": "npm:@types/prop-types",
+      "type": "static"
+    },
+    {
+      "source": "npm:@types/react@18.3.18",
+      "target": "npm:csstype",
+      "type": "static"
+    },
+    {
       "source": "npm:@types/react",
       "target": "npm:csstype",
       "type": "static"
@@ -10868,8 +10950,78 @@
       "type": "static"
     },
     {
+      "source": "npm:@vanilla-extract/css",
+      "target": "npm:@emotion/hash",
+      "type": "static"
+    },
+    {
+      "source": "npm:@vanilla-extract/css",
+      "target": "npm:@vanilla-extract/private",
+      "type": "static"
+    },
+    {
+      "source": "npm:@vanilla-extract/css",
+      "target": "npm:css-what",
+      "type": "static"
+    },
+    {
+      "source": "npm:@vanilla-extract/css",
+      "target": "npm:cssesc",
+      "type": "static"
+    },
+    {
+      "source": "npm:@vanilla-extract/css",
+      "target": "npm:csstype",
+      "type": "static"
+    },
+    {
+      "source": "npm:@vanilla-extract/css",
+      "target": "npm:dedent",
+      "type": "static"
+    },
+    {
+      "source": "npm:@vanilla-extract/css",
+      "target": "npm:deep-object-diff",
+      "type": "static"
+    },
+    {
+      "source": "npm:@vanilla-extract/css",
+      "target": "npm:deepmerge",
+      "type": "static"
+    },
+    {
+      "source": "npm:@vanilla-extract/css",
+      "target": "npm:lru-cache",
+      "type": "static"
+    },
+    {
+      "source": "npm:@vanilla-extract/css",
+      "target": "npm:media-query-parser",
+      "type": "static"
+    },
+    {
+      "source": "npm:@vanilla-extract/css",
+      "target": "npm:modern-ahocorasick",
+      "type": "static"
+    },
+    {
+      "source": "npm:@vanilla-extract/css",
+      "target": "npm:picocolors",
+      "type": "static"
+    },
+    {
       "source": "npm:@vanilla-extract/dynamic",
       "target": "npm:@vanilla-extract/private",
+      "type": "static"
+    },
+    {
+      "source": "npm:@vanilla-extract/dynamic",
+      "target": "npm:@vanilla-extract/private",
+      "type": "static"
+    },
+    {
+      "source": "npm:@vanilla-extract/esbuild-plugin",
+      "target": "npm:@vanilla-extract/integration",
       "type": "static"
     },
     {
@@ -11523,6 +11675,36 @@
       "type": "static"
     },
     {
+      "source": "npm:autoprefixer",
+      "target": "npm:browserslist",
+      "type": "static"
+    },
+    {
+      "source": "npm:autoprefixer",
+      "target": "npm:caniuse-lite@1.0.30001700",
+      "type": "static"
+    },
+    {
+      "source": "npm:autoprefixer",
+      "target": "npm:fraction.js",
+      "type": "static"
+    },
+    {
+      "source": "npm:autoprefixer",
+      "target": "npm:normalize-range",
+      "type": "static"
+    },
+    {
+      "source": "npm:autoprefixer",
+      "target": "npm:picocolors",
+      "type": "static"
+    },
+    {
+      "source": "npm:autoprefixer",
+      "target": "npm:postcss-value-parser",
+      "type": "static"
+    },
+    {
       "source": "npm:available-typed-arrays",
       "target": "npm:possible-typed-array-names",
       "type": "static"
@@ -11595,6 +11777,26 @@
     {
       "source": "npm:braces",
       "target": "npm:fill-range",
+      "type": "static"
+    },
+    {
+      "source": "npm:browserslist",
+      "target": "npm:caniuse-lite",
+      "type": "static"
+    },
+    {
+      "source": "npm:browserslist",
+      "target": "npm:electron-to-chromium",
+      "type": "static"
+    },
+    {
+      "source": "npm:browserslist",
+      "target": "npm:node-releases",
+      "type": "static"
+    },
+    {
+      "source": "npm:browserslist",
+      "target": "npm:update-browserslist-db",
       "type": "static"
     },
     {
@@ -18088,32 +18290,47 @@
       "type": "static"
     },
     {
-      "source": "npm:postcss",
+      "source": "npm:postcss@8.5.2",
       "target": "npm:nanoid",
       "type": "static"
     },
     {
-      "source": "npm:postcss",
+      "source": "npm:postcss@8.5.2",
       "target": "npm:picocolors",
       "type": "static"
     },
     {
-      "source": "npm:postcss",
+      "source": "npm:postcss@8.5.2",
       "target": "npm:source-map-js",
       "type": "static"
     },
     {
-      "source": "npm:postcss",
+      "source": "npm:postcss@8.5.2",
       "target": "npm:nanoid",
       "type": "static"
     },
     {
-      "source": "npm:postcss",
+      "source": "npm:postcss@8.5.2",
       "target": "npm:picocolors",
       "type": "static"
     },
     {
-      "source": "npm:postcss",
+      "source": "npm:postcss@8.5.2",
+      "target": "npm:source-map-js",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss@8.5.2",
+      "target": "npm:nanoid",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss@8.5.2",
+      "target": "npm:picocolors",
+      "type": "static"
+    },
+    {
+      "source": "npm:postcss@8.5.2",
       "target": "npm:source-map-js",
       "type": "static"
     },
@@ -19829,7 +20046,7 @@
     },
     {
       "source": "npm:vite@5.4.14",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.5.2",
       "type": "static"
     },
     {
@@ -19849,7 +20066,7 @@
     },
     {
       "source": "npm:vite@5.4.14",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.5.2",
       "type": "static"
     },
     {
@@ -19869,7 +20086,7 @@
     },
     {
       "source": "npm:vite",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.5.2",
       "type": "static"
     },
     {
@@ -19889,7 +20106,7 @@
     },
     {
       "source": "npm:vite@6.1.0",
-      "target": "npm:postcss",
+      "target": "npm:postcss@8.5.2",
       "type": "static"
     },
     {
