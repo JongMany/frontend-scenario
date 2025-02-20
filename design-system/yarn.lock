@@ -1561,6 +1561,34 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@jm/react-components-select@workspace:packages/react/components/select":
+  version: 0.0.0-use.local
+  resolution: "@jm/react-components-select@workspace:packages/react/components/select"
+  dependencies:
+    "@jm/esbuild-config": "workspace:^"
+    "@jm/react-hooks-button": "workspace:^"
+    "@jm/react-hooks-select": "workspace:^"
+    "@jm/themes": "workspace:^"
+    "@types/add": "npm:^2"
+    "@types/react": "npm:^19.0.8"
+    "@types/react-dom": "npm:^19.0.3"
+    "@vanilla-extract/css": "npm:^1.17.1"
+    "@vanilla-extract/dynamic": "npm:^2.1.2"
+    "@vanilla-extract/esbuild-plugin": "npm:^2.3.15"
+    "@vanilla-extract/recipes": "npm:^0.5.5"
+    "@vanilla-extract/sprinkles": "npm:^1.6.3"
+    add: "npm:^2.0.6"
+    clsx: "npm:^2.1.1"
+    react: "npm:^19.0.0"
+    react-dom: "npm:^19.0.0"
+    typescript: "npm:^5.7.3"
+    yarn: "npm:^1.22.22"
+  peerDependencies:
+    "@jm/themes": "workspace:^"
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
 "@jm/react-hooks-button@workspace:^, @jm/react-hooks-button@workspace:packages/react/hooks/button":
   version: 0.0.0-use.local
   resolution: "@jm/react-hooks-button@workspace:packages/react/hooks/button"
@@ -1597,7 +1625,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@jm/react-hooks-select@workspace:packages/react/hooks/select":
+"@jm/react-hooks-select@workspace:^, @jm/react-hooks-select@workspace:packages/react/hooks/select":
   version: 0.0.0-use.local
   resolution: "@jm/react-hooks-select@workspace:packages/react/hooks/select"
   dependencies:
