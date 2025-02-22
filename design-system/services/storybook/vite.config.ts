@@ -11,6 +11,8 @@ export default defineConfig({
   plugins: [react()],
   test: {
     global: true,
-    include: ["./stories/**/*.test.ts?(x)"]
+    environment: "happy-dom",
+    include: ["./stories/**/*.test.ts?(x)"],
+
   }
 } as VitestConfigExport);

@@ -3556,6 +3556,10 @@
       "services/storybook/package.json",
       "nx/core/package-json"
     ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
     "metadata.js": [
       "services/storybook/package.json",
       "nx/core/package-json"
@@ -3628,6 +3632,34 @@
       "services/storybook/package.json",
       "nx/core/package-json"
     ],
+    "targets.test": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "services/storybook/package.json",
+      "nx/core/package-json"
+    ],
     "targets.nx-release-publish": [
       "services/storybook/package.json",
       "nx/core/package-json"
@@ -3649,6 +3681,14 @@
       "nx/target-defaults"
     ],
     "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
       "nx.json",
       "nx/target-defaults"
     ]
@@ -3837,100 +3877,6 @@
     "targets.build.parallelism": [
       "nx.json",
       "nx/target-defaults"
-    ]
-  },
-  "services/storybook/storybook-static": {
-    "root": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "name": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "generatedAt": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "hasCustomBabel": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "hasCustomWebpack": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "hasStaticDirs": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "hasStorybookEslint": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "refCount": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "testPackages": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "hasRouterPackage": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "packageManager": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "typescriptOptions": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "preview": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "framework": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "builder": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "renderer": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "portableStoriesFileCount": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "applicationFileCount": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "storybookVersion": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "storybookVersionSpecifier": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "language": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "storybookPackages": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
-    ],
-    "addons": [
-      "services/storybook/storybook-static/project.json",
-      "nx/core/project-json"
     ]
   }
 }
