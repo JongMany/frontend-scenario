@@ -1679,6 +1679,312 @@
       "nx/target-defaults"
     ]
   },
+  "packages/react/components/toast": {
+    "root": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "sourceRoot": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "projectType": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.2": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.3": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.4": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.5": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.6": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageExports": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:cjs": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:cjs.executor": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:cjs.options": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:cjs.metadata": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:cjs.options.script": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:cjs.metadata.scriptContent": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:cjs.metadata.runCommand": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:esm": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:esm.executor": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:esm.options": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:esm.metadata": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:esm.options.script": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:esm.metadata.scriptContent": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:esm.metadata.runCommand": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:js": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:js.executor": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:js.options": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:js.metadata": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:js.options.script": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:js.metadata.scriptContent": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:js.metadata.runCommand": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ts": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ts.executor": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ts.options": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ts.metadata": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ts.options.script": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ts.metadata.scriptContent": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build:ts.metadata.runCommand": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.clean": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.clean.executor": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.clean.options": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.clean.metadata": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.clean.options.script": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.clean.metadata.scriptContent": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.clean.metadata.runCommand": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.executor": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options.script": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.scriptContent": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.runCommand": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.executor": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.options": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.metadata": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.options.script": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.metadata.scriptContent": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.dev.metadata.runCommand": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "packages/react/components/toast/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
   "packages/react/hooks/button": {
     "root": [
       "packages/react/hooks/button/package.json",
@@ -3531,6 +3837,100 @@
     "targets.build.parallelism": [
       "nx.json",
       "nx/target-defaults"
+    ]
+  },
+  "services/storybook/storybook-static": {
+    "root": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "generatedAt": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "hasCustomBabel": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "hasCustomWebpack": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "hasStaticDirs": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "hasStorybookEslint": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "refCount": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "testPackages": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "hasRouterPackage": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "packageManager": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "typescriptOptions": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "preview": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "framework": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "builder": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "renderer": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "portableStoriesFileCount": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "applicationFileCount": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "storybookVersion": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "storybookVersionSpecifier": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "language": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "storybookPackages": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
+    ],
+    "addons": [
+      "services/storybook/storybook-static/project.json",
+      "nx/core/project-json"
     ]
   }
 }

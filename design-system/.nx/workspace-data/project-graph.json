@@ -138,6 +138,117 @@
         "implicitDependencies": []
       }
     },
+    "storybook-static": {
+      "name": "storybook-static",
+      "type": "lib",
+      "data": {
+        "root": "services/storybook/storybook-static",
+        "name": "storybook-static",
+        "generatedAt": 1740190496068,
+        "hasCustomBabel": false,
+        "hasCustomWebpack": false,
+        "hasStaticDirs": false,
+        "hasStorybookEslint": false,
+        "refCount": 0,
+        "testPackages": {
+          "@testing-library/dom": "9.3.4",
+          "@testing-library/jest-dom": "6.6.3",
+          "@testing-library/react": "14.3.1",
+          "@testing-library/user-event": null,
+          "@vitest/ui": "0.34.7",
+          "vitest": "0.34.6"
+        },
+        "hasRouterPackage": false,
+        "packageManager": {
+          "type": "yarn",
+          "version": "4.6.0"
+        },
+        "typescriptOptions": {
+          "reactDocgen": "react-docgen-typescript"
+        },
+        "preview": {
+          "usesGlobals": true
+        },
+        "framework": {
+          "name": "@storybook/react-vite",
+          "options": {}
+        },
+        "builder": "@storybook/builder-vite",
+        "renderer": "@storybook/react",
+        "portableStoriesFileCount": 0,
+        "applicationFileCount": 0,
+        "storybookVersion": "8.5.6",
+        "storybookVersionSpecifier": "^8.5.6",
+        "language": "javascript",
+        "storybookPackages": {
+          "@storybook/addon-a11y": {
+            "version": "8.5.6"
+          },
+          "@storybook/addon-essentials": {
+            "version": "8.5.6"
+          },
+          "@storybook/addon-interactions": {
+            "version": "8.5.6"
+          },
+          "@storybook/addon-links": {
+            "version": "8.5.6"
+          },
+          "@storybook/addon-onboarding": {
+            "version": "8.5.6"
+          },
+          "@storybook/addon-themes": {
+            "version": "8.5.6"
+          },
+          "@storybook/blocks": {
+            "version": "8.5.6"
+          },
+          "@storybook/manager-api": {
+            "version": "8.5.6"
+          },
+          "@storybook/react": {
+            "version": "8.5.6"
+          },
+          "@storybook/react-vite": {
+            "version": "8.5.6"
+          },
+          "@storybook/test": {
+            "version": "8.5.6"
+          },
+          "@storybook/theming": {
+            "version": "8.5.6"
+          },
+          "storybook": {
+            "version": "8.5.6"
+          },
+          "storybook-addon-pseudo-states": {
+            "version": "4.0.2"
+          },
+          "storybook-addon-root-attributes": {
+            "version": "2.1.3"
+          }
+        },
+        "addons": {
+          "$SNIP/node_modules/@storybook/addon-links": {
+            "version": null
+          },
+          "$SNIP/node_modules/@storybook/addon-essentials": {
+            "version": null
+          },
+          "$SNIP/node_modules/@storybook/addon-onboarding": {
+            "version": null
+          },
+          "$SNIP/node_modules/@storybook/addon-interactions": {
+            "version": null
+          },
+          "@chromatic-com/storybook": {
+            "version": "3.2.4"
+          }
+        },
+        "implicitDependencies": [],
+        "targets": {},
+        "tags": []
+      }
+    },
     "@jm/react-components-button": {
       "name": "@jm/react-components-button",
       "type": "lib",
@@ -577,6 +688,144 @@
           },
           "js": {
             "packageName": "@jm/react-components-input",
+            "packageExports": {
+              ".": {
+                "types": "./dist/index.d.ts",
+                "import": "./dist/index.js",
+                "require": "./dist/index.cjs"
+              },
+              "./style.css": "./dist/index.css"
+            },
+            "packageMain": "dist/index.js",
+            "isInPackageManagerWorkspaces": true
+          }
+        },
+        "targets": {
+          "build:cjs": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:cjs"
+            },
+            "metadata": {
+              "scriptContent": "esbuild src/index.js --format=cjs --minify --bundle --outfile=dist/index.js",
+              "runCommand": "yarn build:cjs"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "build:esm": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:esm"
+            },
+            "metadata": {
+              "scriptContent": "esbuild src/index.js --format=esm --minify --bundle --outfile=dist/index.js",
+              "runCommand": "yarn build:esm"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "build:js": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:js"
+            },
+            "metadata": {
+              "scriptContent": "node esbuild.js",
+              "runCommand": "yarn build:js"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "build:ts": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:ts"
+            },
+            "metadata": {
+              "scriptContent": "tsc --emitDeclarationOnly",
+              "runCommand": "yarn build:ts"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "clean": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "clean"
+            },
+            "metadata": {
+              "scriptContent": "rm -rf dist",
+              "runCommand": "yarn clean"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "build": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build"
+            },
+            "metadata": {
+              "scriptContent": "yarn clean && yarn build:js && yarn build:ts",
+              "runCommand": "yarn build"
+            },
+            "configurations": {},
+            "parallelism": true,
+            "dependsOn": [
+              "^build"
+            ]
+          },
+          "dev": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "dev"
+            },
+            "metadata": {
+              "scriptContent": "yarn clean && yarn build:js --watch &&  yarn build:ts --watch",
+              "runCommand": "yarn dev"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "nx-release-publish": {
+            "executor": "@nx/js:release-publish",
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "options": {},
+            "configurations": {},
+            "parallelism": true
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
+    "@jm/react-components-toast": {
+      "name": "@jm/react-components-toast",
+      "type": "lib",
+      "data": {
+        "root": "packages/react/components/toast",
+        "sourceRoot": "packages/react/components/toast",
+        "name": "@jm/react-components-toast",
+        "projectType": "library",
+        "tags": [
+          "npm:public"
+        ],
+        "metadata": {
+          "targetGroups": {
+            "NPM Scripts": [
+              "build:cjs",
+              "build:esm",
+              "build:js",
+              "build:ts",
+              "clean",
+              "build",
+              "dev"
+            ]
+          },
+          "js": {
+            "packageName": "@jm/react-components-toast",
             "packageExports": {
               ".": {
                 "types": "./dist/index.d.ts",
@@ -10042,6 +10291,7 @@
         "type": "static"
       }
     ],
+    "storybook-static": [],
     "@jm/react-components-button": [
       {
         "source": "@jm/react-components-button",
@@ -10376,6 +10626,88 @@
       },
       {
         "source": "@jm/react-components-input",
+        "target": "npm:clsx",
+        "type": "static"
+      }
+    ],
+    "@jm/react-components-toast": [
+      {
+        "source": "@jm/react-components-toast",
+        "target": "@jm/themes",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-toast",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-toast",
+        "target": "@jm/esbuild-config",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-toast",
+        "target": "npm:@types/add",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-toast",
+        "target": "npm:@types/react",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-toast",
+        "target": "npm:@types/react-dom",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-toast",
+        "target": "npm:@vanilla-extract/css",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-toast",
+        "target": "npm:@vanilla-extract/dynamic",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-toast",
+        "target": "npm:@vanilla-extract/esbuild-plugin",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-toast",
+        "target": "npm:@vanilla-extract/recipes",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-toast",
+        "target": "npm:@vanilla-extract/sprinkles",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-toast",
+        "target": "npm:add",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-toast",
+        "target": "npm:react-dom",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-toast",
+        "target": "npm:typescript",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-toast",
+        "target": "npm:yarn",
+        "type": "static"
+      },
+      {
+        "source": "@jm/react-components-toast",
         "target": "npm:clsx",
         "type": "static"
       }
@@ -10738,6 +11070,11 @@
       {
         "source": "@jm/storybook",
         "target": "npm:vitest",
+        "type": "static"
+      },
+      {
+        "source": "@jm/storybook",
+        "target": "@jm/react-components-toast",
         "type": "static"
       },
       {
@@ -20115,5 +20452,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1740091275229
+  "computedAt": 1740190511543
 }
