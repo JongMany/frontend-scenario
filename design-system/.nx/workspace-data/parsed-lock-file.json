@@ -2097,22 +2097,13 @@
         "hash": "10c0/0910481ff411fdedcf6152d7811d0d2472476e71b013a440cdc5e40c48989e1328cc6e72299731aeb45ad50229c03f01bc3d10e66bc64d551e4e097554de8676"
       }
     },
-    "npm:@testing-library/dom@10.4.0": {
-      "type": "npm",
-      "name": "npm:@testing-library/dom@10.4.0",
-      "data": {
-        "version": "10.4.0",
-        "packageName": "@testing-library/dom",
-        "hash": "10c0/0352487720ecd433400671e773df0b84b8268fb3fe8e527cdfd7c11b1365b398b4e0eddba6e7e0c85e8d615f48257753283fccec41f6b986fd6c85f15eb5f84f"
-      }
-    },
     "npm:@testing-library/dom": {
       "type": "npm",
       "name": "npm:@testing-library/dom",
       "data": {
-        "version": "9.3.4",
+        "version": "10.4.0",
         "packageName": "@testing-library/dom",
-        "hash": "10c0/147da340e8199d7f98f3a4ad8aa22ed55b914b83957efa5eb22bfea021a979ebe5a5182afa9c1e5b7a5f99a7f6744a5a4d9325ae46ec3b33b5a15aed8750d794"
+        "hash": "10c0/0352487720ecd433400671e773df0b84b8268fb3fe8e527cdfd7c11b1365b398b4e0eddba6e7e0c85e8d615f48257753283fccec41f6b986fd6c85f15eb5f84f"
       }
     },
     "npm:@testing-library/jest-dom@6.5.0": {
@@ -2133,13 +2124,13 @@
         "hash": "10c0/5566b6c0b7b0709bc244aec3aa3dc9e5f4663e8fb2b99d8cd456fc07279e59db6076cbf798f9d3099a98fca7ef4cd50e4e1f4c4dec5a60a8fad8d24a638a5bf6"
       }
     },
-    "npm:@testing-library/react@14.3.1": {
+    "npm:@testing-library/react@16.2.0": {
       "type": "npm",
-      "name": "npm:@testing-library/react@14.3.1",
+      "name": "npm:@testing-library/react@16.2.0",
       "data": {
-        "version": "14.3.1",
+        "version": "16.2.0",
         "packageName": "@testing-library/react",
-        "hash": "10c0/1ccf4eb1510500cc20a805cb0244c9098dca28a8745173a8f71ea1274d63774f0b7898a35c878b43c797b89c13621548909ff37843b835c1a27ee1efbbdd098c"
+        "hash": "10c0/7adaedaf237002b42e04a6261d2756074a19cbca0f0c79ba375660f618e123c0ee56256ced00aeb0bb7225ba1a8a81b92b692cca053521a21bb92a8cace1e4c6"
       }
     },
     "npm:@testing-library/user-event@14.5.2": {
@@ -2952,15 +2943,6 @@
         "hash": "10c0/c5640c2d89045371c7cedd6a70212a04e360fd34d6edeae32f6952c63949e3525ea77dbec0289d8213a99bbaeab5abfa860b5c12cf88a2e6cf8106e90dd27a7e"
       }
     },
-    "npm:aria-query@5.1.3": {
-      "type": "npm",
-      "name": "npm:aria-query@5.1.3",
-      "data": {
-        "version": "5.1.3",
-        "packageName": "aria-query",
-        "hash": "10c0/edcbc8044c4663d6f88f785e983e6784f98cb62b4ba1e9dd8d61b725d0203e4cfca38d676aee984c31f354103461102a3d583aa4fbe4fd0a89b679744f4e5faf"
-      }
-    },
     "npm:aria-query@5.3.0": {
       "type": "npm",
       "name": "npm:aria-query@5.3.0",
@@ -3627,15 +3609,6 @@
         "hash": "10c0/7102cf3b7bb719c6b9c0db2e19bf0aa9318d141581befe8c7ce8ccd39af9eaa4346e5e05adef7f9bd7015da0f13a3a25dcfe306ef79dc8668aedbecb658dd247"
       }
     },
-    "npm:deep-equal": {
-      "type": "npm",
-      "name": "npm:deep-equal",
-      "data": {
-        "version": "2.2.3",
-        "packageName": "deep-equal",
-        "hash": "10c0/a48244f90fa989f63ff5ef0cc6de1e4916b48ea0220a9c89a378561960814794a5800c600254482a2c8fd2e49d6c2e196131dc983976adb024c94a42dfe4949f"
-      }
-    },
     "npm:deep-is": {
       "type": "npm",
       "name": "npm:deep-is",
@@ -3780,18 +3753,18 @@
         "hash": "10c0/c96bdccabe9d62ab6fea9399fdff04a66e6563c1d6fb3a3a063e8d53c3bb136ba63e84250bbf63d00086a769ad53aef92d2bd483f03f837fc97b71cbee6b2520"
       }
     },
-    "npm:dom-accessibility-api": {
+    "npm:dom-accessibility-api@0.5.16": {
       "type": "npm",
-      "name": "npm:dom-accessibility-api",
+      "name": "npm:dom-accessibility-api@0.5.16",
       "data": {
         "version": "0.5.16",
         "packageName": "dom-accessibility-api",
         "hash": "10c0/b2c2eda4fae568977cdac27a9f0c001edf4f95a6a6191dfa611e3721db2478d1badc01db5bb4fa8a848aeee13e442a6c2a4386d65ec65a1436f24715a2f8d053"
       }
     },
-    "npm:dom-accessibility-api@0.6.3": {
+    "npm:dom-accessibility-api": {
       "type": "npm",
-      "name": "npm:dom-accessibility-api@0.6.3",
+      "name": "npm:dom-accessibility-api",
       "data": {
         "version": "0.6.3",
         "packageName": "dom-accessibility-api",
@@ -3940,15 +3913,6 @@
         "version": "1.3.0",
         "packageName": "es-errors",
         "hash": "10c0/0a61325670072f98d8ae3b914edab3559b6caa980f08054a3b872052640d91da01d38df55df797fcc916389d77fc92b8d5906cf028f4db46d7e3003abecbca85"
-      }
-    },
-    "npm:es-get-iterator": {
-      "type": "npm",
-      "name": "npm:es-get-iterator",
-      "data": {
-        "version": "1.1.3",
-        "packageName": "es-get-iterator",
-        "hash": "10c0/ebd11effa79851ea75d7f079405f9d0dc185559fd65d986c6afea59a0ff2d46c2ed8675f19f03dce7429d7f6c14ff9aede8d121fbab78d75cfda6a263030bac0"
       }
     },
     "npm:es-iterator-helpers": {
@@ -6084,15 +6048,6 @@
         "hash": "10c0/d7f8711e803b96ea3191c745d6f8056ce1f2496e530e6a19a0e92d89b0fa3c76d910c31f0aa270432db6bd3b2f85500a376a83aaba849a8d518c8845b3211692"
       }
     },
-    "npm:object-is": {
-      "type": "npm",
-      "name": "npm:object-is",
-      "data": {
-        "version": "1.1.6",
-        "packageName": "object-is",
-        "hash": "10c0/506af444c4dce7f8e31f34fc549e2fb8152d6b9c4a30c6e62852badd7f520b579c679af433e7a072f9d78eb7808d230dc12e1cf58da9154dfbf8813099ea0fe0"
-      }
-    },
     "npm:object-keys": {
       "type": "npm",
       "name": "npm:object-keys",
@@ -7135,15 +7090,6 @@
         "version": "3.8.0",
         "packageName": "std-env",
         "hash": "10c0/f560a2902fd0fa3d648d7d0acecbd19d664006f7372c1fba197ed4c216b4c9e48db6e2769b5fe1616d42a9333c9f066c5011935035e85c59f45dc4f796272040"
-      }
-    },
-    "npm:stop-iteration-iterator": {
-      "type": "npm",
-      "name": "npm:stop-iteration-iterator",
-      "data": {
-        "version": "1.1.0",
-        "packageName": "stop-iteration-iterator",
-        "hash": "10c0/de4e45706bb4c0354a4b1122a2b8cc45a639e86206807ce0baf390ee9218d3ef181923fa4d2b67443367c491aa255c5fbaa64bb74648e3c5b48299928af86c09"
       }
     },
     "npm:storybook-addon-pseudo-states": {
@@ -9712,7 +9658,7 @@
     },
     {
       "source": "npm:@storybook/test",
-      "target": "npm:@testing-library/dom@10.4.0",
+      "target": "npm:@testing-library/dom",
       "type": "static"
     },
     {
@@ -9752,7 +9698,7 @@
     },
     {
       "source": "npm:@storybook/test",
-      "target": "npm:@testing-library/dom@10.4.0",
+      "target": "npm:@testing-library/dom",
       "type": "static"
     },
     {
@@ -9776,73 +9722,33 @@
       "type": "static"
     },
     {
-      "source": "npm:@testing-library/dom@10.4.0",
+      "source": "npm:@testing-library/dom",
       "target": "npm:@babel/code-frame",
       "type": "static"
     },
     {
-      "source": "npm:@testing-library/dom@10.4.0",
+      "source": "npm:@testing-library/dom",
       "target": "npm:@babel/runtime",
       "type": "static"
     },
     {
-      "source": "npm:@testing-library/dom@10.4.0",
+      "source": "npm:@testing-library/dom",
       "target": "npm:@types/aria-query",
       "type": "static"
     },
     {
-      "source": "npm:@testing-library/dom@10.4.0",
+      "source": "npm:@testing-library/dom",
       "target": "npm:aria-query@5.3.0",
       "type": "static"
     },
     {
-      "source": "npm:@testing-library/dom@10.4.0",
-      "target": "npm:chalk",
-      "type": "static"
-    },
-    {
-      "source": "npm:@testing-library/dom@10.4.0",
-      "target": "npm:dom-accessibility-api",
-      "type": "static"
-    },
-    {
-      "source": "npm:@testing-library/dom@10.4.0",
-      "target": "npm:lz-string",
-      "type": "static"
-    },
-    {
-      "source": "npm:@testing-library/dom@10.4.0",
-      "target": "npm:pretty-format@27.5.1",
-      "type": "static"
-    },
-    {
-      "source": "npm:@testing-library/dom",
-      "target": "npm:@babel/code-frame",
-      "type": "static"
-    },
-    {
-      "source": "npm:@testing-library/dom",
-      "target": "npm:@babel/runtime",
-      "type": "static"
-    },
-    {
-      "source": "npm:@testing-library/dom",
-      "target": "npm:@types/aria-query",
-      "type": "static"
-    },
-    {
-      "source": "npm:@testing-library/dom",
-      "target": "npm:aria-query@5.1.3",
-      "type": "static"
-    },
-    {
       "source": "npm:@testing-library/dom",
       "target": "npm:chalk",
       "type": "static"
     },
     {
       "source": "npm:@testing-library/dom",
-      "target": "npm:dom-accessibility-api",
+      "target": "npm:dom-accessibility-api@0.5.16",
       "type": "static"
     },
     {
@@ -9872,7 +9778,7 @@
     },
     {
       "source": "npm:@testing-library/dom",
-      "target": "npm:aria-query@5.1.3",
+      "target": "npm:aria-query@5.3.0",
       "type": "static"
     },
     {
@@ -9882,7 +9788,7 @@
     },
     {
       "source": "npm:@testing-library/dom",
-      "target": "npm:dom-accessibility-api",
+      "target": "npm:dom-accessibility-api@0.5.16",
       "type": "static"
     },
     {
@@ -9917,7 +9823,7 @@
     },
     {
       "source": "npm:@testing-library/jest-dom@6.5.0",
-      "target": "npm:dom-accessibility-api@0.6.3",
+      "target": "npm:dom-accessibility-api",
       "type": "static"
     },
     {
@@ -9952,7 +9858,7 @@
     },
     {
       "source": "npm:@testing-library/jest-dom",
-      "target": "npm:dom-accessibility-api@0.6.3",
+      "target": "npm:dom-accessibility-api",
       "type": "static"
     },
     {
@@ -9966,18 +9872,8 @@
       "type": "static"
     },
     {
-      "source": "npm:@testing-library/react@14.3.1",
+      "source": "npm:@testing-library/react@16.2.0",
       "target": "npm:@babel/runtime",
-      "type": "static"
-    },
-    {
-      "source": "npm:@testing-library/react@14.3.1",
-      "target": "npm:@testing-library/dom",
-      "type": "static"
-    },
-    {
-      "source": "npm:@testing-library/react@14.3.1",
-      "target": "npm:@types/react-dom@18.3.5",
       "type": "static"
     },
     {
@@ -11031,23 +10927,8 @@
       "type": "static"
     },
     {
-      "source": "npm:aria-query@5.1.3",
-      "target": "npm:deep-equal",
-      "type": "static"
-    },
-    {
       "source": "npm:aria-query@5.3.0",
       "target": "npm:dequal",
-      "type": "static"
-    },
-    {
-      "source": "npm:array-buffer-byte-length",
-      "target": "npm:call-bound",
-      "type": "static"
-    },
-    {
-      "source": "npm:array-buffer-byte-length",
-      "target": "npm:is-array-buffer",
       "type": "static"
     },
     {
@@ -11611,46 +11492,6 @@
       "type": "static"
     },
     {
-      "source": "npm:call-bind",
-      "target": "npm:call-bind-apply-helpers",
-      "type": "static"
-    },
-    {
-      "source": "npm:call-bind",
-      "target": "npm:es-define-property",
-      "type": "static"
-    },
-    {
-      "source": "npm:call-bind",
-      "target": "npm:get-intrinsic",
-      "type": "static"
-    },
-    {
-      "source": "npm:call-bind",
-      "target": "npm:set-function-length",
-      "type": "static"
-    },
-    {
-      "source": "npm:call-bind",
-      "target": "npm:call-bind-apply-helpers",
-      "type": "static"
-    },
-    {
-      "source": "npm:call-bind",
-      "target": "npm:es-define-property",
-      "type": "static"
-    },
-    {
-      "source": "npm:call-bind",
-      "target": "npm:get-intrinsic",
-      "type": "static"
-    },
-    {
-      "source": "npm:call-bind",
-      "target": "npm:set-function-length",
-      "type": "static"
-    },
-    {
       "source": "npm:call-bound",
       "target": "npm:call-bind-apply-helpers",
       "type": "static"
@@ -11948,96 +11789,6 @@
     {
       "source": "npm:debug@3.2.7",
       "target": "npm:ms",
-      "type": "static"
-    },
-    {
-      "source": "npm:deep-equal",
-      "target": "npm:array-buffer-byte-length",
-      "type": "static"
-    },
-    {
-      "source": "npm:deep-equal",
-      "target": "npm:call-bind",
-      "type": "static"
-    },
-    {
-      "source": "npm:deep-equal",
-      "target": "npm:es-get-iterator",
-      "type": "static"
-    },
-    {
-      "source": "npm:deep-equal",
-      "target": "npm:get-intrinsic",
-      "type": "static"
-    },
-    {
-      "source": "npm:deep-equal",
-      "target": "npm:is-arguments",
-      "type": "static"
-    },
-    {
-      "source": "npm:deep-equal",
-      "target": "npm:is-array-buffer",
-      "type": "static"
-    },
-    {
-      "source": "npm:deep-equal",
-      "target": "npm:is-date-object",
-      "type": "static"
-    },
-    {
-      "source": "npm:deep-equal",
-      "target": "npm:is-regex",
-      "type": "static"
-    },
-    {
-      "source": "npm:deep-equal",
-      "target": "npm:is-shared-array-buffer",
-      "type": "static"
-    },
-    {
-      "source": "npm:deep-equal",
-      "target": "npm:isarray",
-      "type": "static"
-    },
-    {
-      "source": "npm:deep-equal",
-      "target": "npm:object-is",
-      "type": "static"
-    },
-    {
-      "source": "npm:deep-equal",
-      "target": "npm:object-keys",
-      "type": "static"
-    },
-    {
-      "source": "npm:deep-equal",
-      "target": "npm:object.assign",
-      "type": "static"
-    },
-    {
-      "source": "npm:deep-equal",
-      "target": "npm:regexp.prototype.flags",
-      "type": "static"
-    },
-    {
-      "source": "npm:deep-equal",
-      "target": "npm:side-channel",
-      "type": "static"
-    },
-    {
-      "source": "npm:deep-equal",
-      "target": "npm:which-boxed-primitive",
-      "type": "static"
-    },
-    {
-      "source": "npm:deep-equal",
-      "target": "npm:which-collection",
-      "type": "static"
-    },
-    {
-      "source": "npm:deep-equal",
-      "target": "npm:which-typed-array",
       "type": "static"
     },
     {
@@ -13703,51 +13454,6 @@
     {
       "source": "npm:es-abstract",
       "target": "npm:which-typed-array",
-      "type": "static"
-    },
-    {
-      "source": "npm:es-get-iterator",
-      "target": "npm:call-bind",
-      "type": "static"
-    },
-    {
-      "source": "npm:es-get-iterator",
-      "target": "npm:get-intrinsic",
-      "type": "static"
-    },
-    {
-      "source": "npm:es-get-iterator",
-      "target": "npm:has-symbols",
-      "type": "static"
-    },
-    {
-      "source": "npm:es-get-iterator",
-      "target": "npm:is-arguments",
-      "type": "static"
-    },
-    {
-      "source": "npm:es-get-iterator",
-      "target": "npm:is-map",
-      "type": "static"
-    },
-    {
-      "source": "npm:es-get-iterator",
-      "target": "npm:is-set",
-      "type": "static"
-    },
-    {
-      "source": "npm:es-get-iterator",
-      "target": "npm:is-string",
-      "type": "static"
-    },
-    {
-      "source": "npm:es-get-iterator",
-      "target": "npm:isarray",
-      "type": "static"
-    },
-    {
-      "source": "npm:es-get-iterator",
-      "target": "npm:stop-iteration-iterator",
       "type": "static"
     },
     {
@@ -15786,106 +15492,6 @@
       "type": "static"
     },
     {
-      "source": "npm:get-intrinsic",
-      "target": "npm:call-bind-apply-helpers",
-      "type": "static"
-    },
-    {
-      "source": "npm:get-intrinsic",
-      "target": "npm:es-define-property",
-      "type": "static"
-    },
-    {
-      "source": "npm:get-intrinsic",
-      "target": "npm:es-errors",
-      "type": "static"
-    },
-    {
-      "source": "npm:get-intrinsic",
-      "target": "npm:es-object-atoms",
-      "type": "static"
-    },
-    {
-      "source": "npm:get-intrinsic",
-      "target": "npm:function-bind",
-      "type": "static"
-    },
-    {
-      "source": "npm:get-intrinsic",
-      "target": "npm:get-proto",
-      "type": "static"
-    },
-    {
-      "source": "npm:get-intrinsic",
-      "target": "npm:gopd",
-      "type": "static"
-    },
-    {
-      "source": "npm:get-intrinsic",
-      "target": "npm:has-symbols",
-      "type": "static"
-    },
-    {
-      "source": "npm:get-intrinsic",
-      "target": "npm:hasown",
-      "type": "static"
-    },
-    {
-      "source": "npm:get-intrinsic",
-      "target": "npm:math-intrinsics",
-      "type": "static"
-    },
-    {
-      "source": "npm:get-intrinsic",
-      "target": "npm:call-bind-apply-helpers",
-      "type": "static"
-    },
-    {
-      "source": "npm:get-intrinsic",
-      "target": "npm:es-define-property",
-      "type": "static"
-    },
-    {
-      "source": "npm:get-intrinsic",
-      "target": "npm:es-errors",
-      "type": "static"
-    },
-    {
-      "source": "npm:get-intrinsic",
-      "target": "npm:es-object-atoms",
-      "type": "static"
-    },
-    {
-      "source": "npm:get-intrinsic",
-      "target": "npm:function-bind",
-      "type": "static"
-    },
-    {
-      "source": "npm:get-intrinsic",
-      "target": "npm:get-proto",
-      "type": "static"
-    },
-    {
-      "source": "npm:get-intrinsic",
-      "target": "npm:gopd",
-      "type": "static"
-    },
-    {
-      "source": "npm:get-intrinsic",
-      "target": "npm:has-symbols",
-      "type": "static"
-    },
-    {
-      "source": "npm:get-intrinsic",
-      "target": "npm:hasown",
-      "type": "static"
-    },
-    {
-      "source": "npm:get-intrinsic",
-      "target": "npm:math-intrinsics",
-      "type": "static"
-    },
-    {
       "source": "npm:get-proto",
       "target": "npm:dunder-proto",
       "type": "static"
@@ -16286,31 +15892,6 @@
       "type": "static"
     },
     {
-      "source": "npm:is-arguments",
-      "target": "npm:call-bound",
-      "type": "static"
-    },
-    {
-      "source": "npm:is-arguments",
-      "target": "npm:has-tostringtag",
-      "type": "static"
-    },
-    {
-      "source": "npm:is-array-buffer",
-      "target": "npm:call-bind",
-      "type": "static"
-    },
-    {
-      "source": "npm:is-array-buffer",
-      "target": "npm:call-bound",
-      "type": "static"
-    },
-    {
-      "source": "npm:is-array-buffer",
-      "target": "npm:get-intrinsic",
-      "type": "static"
-    },
-    {
       "source": "npm:is-array-buffer",
       "target": "npm:call-bind",
       "type": "static"
@@ -16533,31 +16114,6 @@
     {
       "source": "npm:is-regex",
       "target": "npm:hasown",
-      "type": "static"
-    },
-    {
-      "source": "npm:is-regex",
-      "target": "npm:call-bound",
-      "type": "static"
-    },
-    {
-      "source": "npm:is-regex",
-      "target": "npm:gopd",
-      "type": "static"
-    },
-    {
-      "source": "npm:is-regex",
-      "target": "npm:has-tostringtag",
-      "type": "static"
-    },
-    {
-      "source": "npm:is-regex",
-      "target": "npm:hasown",
-      "type": "static"
-    },
-    {
-      "source": "npm:is-shared-array-buffer",
-      "target": "npm:call-bound",
       "type": "static"
     },
     {
@@ -17391,16 +16947,6 @@
       "type": "static"
     },
     {
-      "source": "npm:object-is",
-      "target": "npm:call-bind",
-      "type": "static"
-    },
-    {
-      "source": "npm:object-is",
-      "target": "npm:define-properties",
-      "type": "static"
-    },
-    {
       "source": "npm:object.assign",
       "target": "npm:call-bind",
       "type": "static"
@@ -18151,36 +17697,6 @@
       "type": "static"
     },
     {
-      "source": "npm:regexp.prototype.flags",
-      "target": "npm:call-bind",
-      "type": "static"
-    },
-    {
-      "source": "npm:regexp.prototype.flags",
-      "target": "npm:define-properties",
-      "type": "static"
-    },
-    {
-      "source": "npm:regexp.prototype.flags",
-      "target": "npm:es-errors",
-      "type": "static"
-    },
-    {
-      "source": "npm:regexp.prototype.flags",
-      "target": "npm:get-proto",
-      "type": "static"
-    },
-    {
-      "source": "npm:regexp.prototype.flags",
-      "target": "npm:gopd",
-      "type": "static"
-    },
-    {
-      "source": "npm:regexp.prototype.flags",
-      "target": "npm:set-function-name",
-      "type": "static"
-    },
-    {
       "source": "npm:resolve",
       "target": "npm:is-core-module",
       "type": "static"
@@ -18611,31 +18127,6 @@
       "type": "static"
     },
     {
-      "source": "npm:side-channel",
-      "target": "npm:es-errors",
-      "type": "static"
-    },
-    {
-      "source": "npm:side-channel",
-      "target": "npm:object-inspect",
-      "type": "static"
-    },
-    {
-      "source": "npm:side-channel",
-      "target": "npm:side-channel-list",
-      "type": "static"
-    },
-    {
-      "source": "npm:side-channel",
-      "target": "npm:side-channel-map",
-      "type": "static"
-    },
-    {
-      "source": "npm:side-channel",
-      "target": "npm:side-channel-weakmap",
-      "type": "static"
-    },
-    {
       "source": "npm:sirv",
       "target": "npm:@polka/url",
       "type": "static"
@@ -18708,16 +18199,6 @@
     {
       "source": "npm:ssri",
       "target": "npm:minipass",
-      "type": "static"
-    },
-    {
-      "source": "npm:stop-iteration-iterator",
-      "target": "npm:es-errors",
-      "type": "static"
-    },
-    {
-      "source": "npm:stop-iteration-iterator",
-      "target": "npm:internal-slot",
       "type": "static"
     },
     {
@@ -19611,31 +19092,6 @@
       "type": "static"
     },
     {
-      "source": "npm:which-boxed-primitive",
-      "target": "npm:is-bigint",
-      "type": "static"
-    },
-    {
-      "source": "npm:which-boxed-primitive",
-      "target": "npm:is-boolean-object",
-      "type": "static"
-    },
-    {
-      "source": "npm:which-boxed-primitive",
-      "target": "npm:is-number-object",
-      "type": "static"
-    },
-    {
-      "source": "npm:which-boxed-primitive",
-      "target": "npm:is-string",
-      "type": "static"
-    },
-    {
-      "source": "npm:which-boxed-primitive",
-      "target": "npm:is-symbol",
-      "type": "static"
-    },
-    {
       "source": "npm:which-builtin-type",
       "target": "npm:call-bound",
       "type": "static"
@@ -19718,56 +19174,6 @@
     {
       "source": "npm:which-collection",
       "target": "npm:is-weakset",
-      "type": "static"
-    },
-    {
-      "source": "npm:which-collection",
-      "target": "npm:is-map",
-      "type": "static"
-    },
-    {
-      "source": "npm:which-collection",
-      "target": "npm:is-set",
-      "type": "static"
-    },
-    {
-      "source": "npm:which-collection",
-      "target": "npm:is-weakmap",
-      "type": "static"
-    },
-    {
-      "source": "npm:which-collection",
-      "target": "npm:is-weakset",
-      "type": "static"
-    },
-    {
-      "source": "npm:which-typed-array",
-      "target": "npm:available-typed-arrays",
-      "type": "static"
-    },
-    {
-      "source": "npm:which-typed-array",
-      "target": "npm:call-bind",
-      "type": "static"
-    },
-    {
-      "source": "npm:which-typed-array",
-      "target": "npm:call-bound",
-      "type": "static"
-    },
-    {
-      "source": "npm:which-typed-array",
-      "target": "npm:for-each",
-      "type": "static"
-    },
-    {
-      "source": "npm:which-typed-array",
-      "target": "npm:gopd",
-      "type": "static"
-    },
-    {
-      "source": "npm:which-typed-array",
-      "target": "npm:has-tostringtag",
       "type": "static"
     },
     {
