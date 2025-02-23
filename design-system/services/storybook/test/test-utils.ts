@@ -1,7 +1,12 @@
 import {cleanup, render} from "@testing-library/react";
 import {afterEach} from "vitest";
+import {setProjectAnnotations} from "@storybook/react"
 
 import "@testing-library/jest-dom";
+
+import * as globalStorybookConfig from "../.storybook/preview"
+
+setProjectAnnotations(globalStorybookConfig);
 
 afterEach(() => {
   cleanup();
